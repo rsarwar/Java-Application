@@ -16,7 +16,7 @@ public class CSVUtilities
 	int numColumns = 0;
 	int numRows = 0;
 	String username = "";
-	String password = ""; 
+	String password = "";
 	
 	
 	public void CSVUserUtilities(File csv)
