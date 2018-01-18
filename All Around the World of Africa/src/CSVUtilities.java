@@ -1,11 +1,3 @@
-import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.layout.StackPane;
-import javafx.stage.Stage;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -19,16 +11,15 @@ import javafx.scene.text.*;
 
 public class CSVUtilities
 {
-	private final int seconds = 10;
 	ArrayList<String> CSVWorldData = new ArrayList<String>();
 	ArrayList<String> CSVUserData = new ArrayList<String>();
 	int numColumns = 0;
 	int numRows = 0;
-	int score = 0;
-	String name = "";
+	String username = "";
+	String password = "";
 	
 	
-	public void CSVUtilities(File csv)
+	public void CSVUserUtilities(File csv)
 	{
 			FileReader reader = null;
 			BufferedReader filein = null;
@@ -46,7 +37,45 @@ public class CSVUtilities
 							numColumns = attributes.length;
 							for(int x = 0; x < numColumns; x++ )
 							{
-								CSVData.add(attributes[x]);
+								CSVUserData.add(attributes[x]);
+							}
+							numRows++;
+							line = filein.readLine(); 
+						}
+				}
+				
+				catch (IOException ioe)
+				{
+		            ioe.printStackTrace();
+		        }	
+			}
+
+		catch (FileNotFoundException fnfe)
+		{
+			System.out.println("ERROR: File not found!");
+		}
+
+	}
+	
+	public void CSVWorldUtilities(File csv)
+	{
+			FileReader reader = null;
+			BufferedReader filein = null;
+			try
+			{
+				reader = new FileReader(csv);
+				filein = new BufferedReader(reader);
+				try
+				{
+					String line = filein.readLine();
+					
+						while (line != null)
+						{ 						
+							String[] attributes = line.split(",");
+							numColumns = attributes.length;
+							for(int x = 0; x < numColumns; x++ )
+							{
+								CSVWorldData.add(attributes[x]);
 							}
 							numRows++;
 							line = filein.readLine(); 
@@ -79,18 +108,13 @@ public class CSVUtilities
 		}
 		StringBuilder sb = new StringBuilder();
 		
-		/*
-		sb.append("Name");
+        
+        sb.append(this.username);
         sb.append(',');
-        sb.append("High Score");
+        sb.append(this.password);
         sb.append('\n');
-        */
         
         
-        sb.append(this.name);
-        sb.append(',');
-        sb.append(this.score);
-        sb.append('\n');
         
         pw.write(sb.toString());
         pw.close();
@@ -107,7 +131,7 @@ public class CSVUtilities
 		{
 			for(int i = 0; i < y; i++)
 			{	
-				System.out.print(this.CSVData.get(a) + "  ");
+				System.out.print(this.CSVWorldData.get(a) + "  ");
 				a++;
 			}
 			System.out.println();
