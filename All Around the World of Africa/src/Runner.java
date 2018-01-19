@@ -17,7 +17,7 @@ public class Runner extends Application{
         
 		Image image = new Image(new FileInputStream("africa-regions-map.jpg"));
 		ImageView imageView = new ImageView(image);
-		imageView.setX(5);;
+		imageView.setX(5);
 		imageView.setY(25);
 		imageView.setFitHeight(455);
 		imageView.setFitWidth(500);
