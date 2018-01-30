@@ -19,11 +19,11 @@ public class Runner extends Application{
 		ImageView imageView = new ImageView(image);
 		imageView.setX(5);
 		imageView.setY(25);
-		imageView.setFitHeight(455);
-		imageView.setFitWidth(500);
+		imageView.setFitHeight(830);
+		imageView.setFitWidth(800);
 		imageView.setPreserveRatio(true);
 		Group root = new Group(imageView);
-		Scene scene = new Scene(root, 600,500);
+		Scene scene = new Scene(root, 830,800);
 		//stage.setTitle = ("Map of Africa");
 		stage.setScene(scene);
 		stage.show();
