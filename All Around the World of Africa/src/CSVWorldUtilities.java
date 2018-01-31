@@ -103,17 +103,42 @@ public class CSVWorldUtilities
 		int i = column+numColumns;
 		while(i < numColumns*numRows)
 		{	
-			double y = Double.parseDouble(CSVUserData.get(i));
+			double y = Double.parseDouble(CSVWorldData.get(i));
 			x.add(y);
 			i = i+numColumns;
 		}
 		return x;
 	}
 	
-	public List<String> getData()
+	public List<String> searchRegion(String region)
 	{
-		ArrayList<String> a = new ArrayList<String>();
-		Array
+		int countryColumn = 1;
+		int regionColumn = 2;
+		
+		List<String> a = this.getDataString(countryColumn);
+		List<String> b = this.getDataString(regionColumn);
+		ArrayList<String> countries = new ArrayList<String>();
+		
+		for(String x : a)
+		{
+			if()
+		}
+		
+		
+		int i = countryColumn+numColumns;
+		while(i < numColumns*numRows)
+		{	
+			String y = CSVWorldData.get(i);
+			int z = 
+			if(y.equals(region))
+			{
+				countries.add(y);
+			}
+			
+			i = i+numColumns;
+		}
+		return countries;
+		 
 	}
 
 	

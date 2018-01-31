@@ -35,7 +35,9 @@ public class Runner extends Application{
     	File data = new File("africa.csv");
 		CSVWorldUtilities x = new CSVWorldUtilities(data);
 		
-		x.printData();
+		//x.printData();
+		System.out.println(x.getDataString(1));
+		System.out.println(x.searchRegion("North"));
 		
         Application.launch(args);
         
