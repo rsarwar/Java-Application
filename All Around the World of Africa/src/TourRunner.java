@@ -1,3 +1,5 @@
+
+
 	import java.util.Scanner;
 	/**Kaitlyn Cao
 	 * January 2018
@@ -28,7 +30,12 @@ public class TourRunner {
 					System.out.println(str);
 				}
 			}
-				
+			
+			NorthRegion chatbot1 = new NorthRegion();
+			EastRegion chatbot2 = new EastRegion();
+			CentralRegion chatbot3 = new CentralRegion();
+			WestRegion chatbot4 = new WestRegion();
+			SouthRegion  chatbot5 = new SouthRegion();
 
 			/*
 			public String getResponse(String statement)
