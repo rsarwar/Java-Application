@@ -16,10 +16,20 @@ public class Utilities {
 	{
 		Image image = newImage(new FileInputStream("wahoorat.png"));
 		ImageView imageView = new ImageView(image);
+		imageView.setX(300);
+		imageView.setY(400);
+		
+		//have the icon greet the user
+	}
+	
+	public static void hoverOverCountry()
+	{
+		
 	}
 	
 	public static void showData()
 	{
 		
 	}
+	
 }
