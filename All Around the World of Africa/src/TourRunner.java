@@ -24,7 +24,7 @@ public class TourRunner {
 				System.out.println("Nice! What region would you like to talk about?");
 			}
 			if(statement.equals("no"))
-			{
+			{ 
 				for(String str: regions)
 				{
 					System.out.println(str);
