@@ -1,4 +1,5 @@
  import java.io.FileInputStream;
+ import java.io.File;
 import java.io.FileNotFoundException;
 
 import javafx.application.Application;
@@ -28,11 +29,15 @@ public class Runner extends Application{
 		stage.setScene(scene);
 		stage.show();
 		
-		CSVWorldData.
-		
     }
 
     public static void main(String[] args) {
+    	File data = new File("africa.csv");
+		CSVWorldUtilities x = new CSVWorldUtilities(data);
+		
+		x.printData();
+		
         Application.launch(args);
+        
     }
 }
