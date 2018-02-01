@@ -4,9 +4,9 @@ package TourGuide;
 import java.util.Scanner;
 	/**Kaitlyn Cao
 	 * January 2018
-	 * 
+	 *  
 	 * */
-	
+	 
 	//http://pitt.libguides.com/c.php?g=12378&p=65814 USEFUL!! 
 public class TourRunner {
 		
