@@ -114,6 +114,7 @@ public class CSVWorldUtilities
 	{
 		int countryColumn = 1;
 		int regionColumn = 2;
+		int counter = 0;
 		
 		List<String> a = this.getDataString(countryColumn);
 		List<String> b = this.getDataString(regionColumn);
@@ -121,22 +122,17 @@ public class CSVWorldUtilities
 		
 		for(String x : a)
 		{
-			if()
-		}
-		
-		
-		int i = countryColumn+numColumns;
-		while(i < numColumns*numRows)
-		{	
-			String y = CSVWorldData.get(i);
-			int z = 
-			if(y.equals(region))
+			if(b.get(counter).equals(region))
 			{
-				countries.add(y);
+				countries.add(x);
+				System.out.println(b.get(counter));
+				
 			}
 			
-			i = i+numColumns;
-		}
+			counter++;
+			
+			System.out.println(counter);
+		}	
 		return countries;
 		 
 	}
