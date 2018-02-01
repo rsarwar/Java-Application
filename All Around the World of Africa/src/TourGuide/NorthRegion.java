@@ -1,3 +1,4 @@
+package TourGuide;
 
 import java.util.Scanner;
 

@@ -1,8 +1,10 @@
+package TourGuide;
 
 
-	import java.util.Scanner;
+import java.util.Scanner;
 	/**Kaitlyn Cao
-	 * January 2018 
+	 * January 2018 +
+	 * 
 	 * */
 	
 	//http://pitt.libguides.com/c.php?g=12378&p=65814 USEFUL!! 
@@ -23,8 +25,7 @@ public class TourRunner {
 			
 			statement = in.nextLine();
 
-			
-			
+
 			
 			if(statement.toLowerCase().equals("yes"))
 			{
@@ -44,7 +45,30 @@ public class TourRunner {
 					}
 					*/
 				}
-			
+				
+				if(statement.toLowerCase().equals("east"))
+				{
+					EastRegion chatbot2 = new EastRegion();
+					System.out.println(chatbot2.greetUser());
+				}
+				
+				if(statement.toLowerCase().equals("central"))
+				{
+					CentralRegion chatbot3 = new CentralRegion();
+					System.out.println(chatbot3.greetUser());
+				}
+				
+				if(statement.toLowerCase().equals("west"))
+				{
+					WestRegion chatbot4 = new WestRegion();
+					System.out.println(chatbot4.greetUser());
+				}
+				
+				if(statement.toLowerCase().equals("south"))
+				{
+					SouthRegion  chatbot5 = new SouthRegion();
+					System.out.println(chatbot5.greetUser());
+				}			
 			}
 			
 			
@@ -56,11 +80,6 @@ public class TourRunner {
 				}
 			}
 			
-			EastRegion chatbot2 = new EastRegion();
-			CentralRegion chatbot3 = new CentralRegion();
-			WestRegion chatbot4 = new WestRegion();
-			SouthRegion  chatbot5 = new SouthRegion();
-
 			/*
 			if(statement.equals("yes"))
 			{
