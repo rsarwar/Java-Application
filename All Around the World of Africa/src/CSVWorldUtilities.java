@@ -7,13 +7,13 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CSVWorldUtilities
+public class CSVWorldUtilities implements CSVUtilities
 {
 	ArrayList<String> CSVWorldData = new ArrayList<String>();
 	int numColumns = 0;
 	int numRows = 0;
 	
-	public CSVWorldUtilities(File csv)
+	public void CSVUtilities(File csv)
 	{
 			FileReader reader = null;
 			BufferedReader filein = null;
@@ -74,7 +74,7 @@ public class CSVWorldUtilities
 	{
 		ArrayList<String> x = new ArrayList<String>();
 		int i = column+numColumns;
-		while(i < numColumns*numRows)
+		while(i < numColumns*numRows-1)
 		{	
 			String y = CSVWorldData.get(i);
 			x.add(y);
@@ -97,6 +97,7 @@ public class CSVWorldUtilities
 		return x;
 	}
 	
+	@Override
 	public List<Double> getDataDouble(int column)
 	{
 		ArrayList<Double> x = new ArrayList<Double>();
@@ -114,25 +115,21 @@ public class CSVWorldUtilities
 	{
 		int countryColumn = 1;
 		int regionColumn = 2;
-		int counter = 0;
 		
 		List<String> a = this.getDataString(countryColumn);
 		List<String> b = this.getDataString(regionColumn);
 		ArrayList<String> countries = new ArrayList<String>();
 		
-		for(String x : a)
+		for(int j = 0; j < a.size(); j++)
 		{
-			if(b.get(counter).equals(region))
+			if(b.get(j).equals(region))
 			{
-				countries.add(x);
-				System.out.println(b.get(counter));
+				countries.add(a.get(j));
+				//System.out.println(b.get(j));
 				
 			}
-			
-			counter++;
-			
-			System.out.println(counter);
 		}	
+		//System.out.println(b.size());
 		return countries;
 		 
 	}

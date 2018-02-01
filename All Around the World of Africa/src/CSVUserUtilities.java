@@ -5,8 +5,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.List;
 
-public class CSVUserUtilities
+public class CSVUserUtilities implements CSVUtilities
 {
 	ArrayList<String> CSVUserData = new ArrayList<String>();
 	int numColumns = 0;
@@ -15,7 +16,7 @@ public class CSVUserUtilities
 	String password = ""; 
 	
 	
-	public CSVUserUtilities(File csv)
+	public void CSVUtilities(File csv)
 	{
 			FileReader reader = null;
 			BufferedReader filein = null;
@@ -95,6 +96,47 @@ public class CSVUserUtilities
 			System.out.println();
 			
 		}
+	}
+	
+	public List<String> getDataString(int column)
+	{
+		ArrayList<String> x = new ArrayList<String>();
+		int i = column+numColumns;
+		while(i < numColumns*numRows-1)
+		{	
+			String y = CSVUserData.get(i);
+			x.add(y);
+			i = i+numColumns;
+		}
+		return x;
+		 
+	}
+
+	public List<Integer> getDataInt(int column)
+	{
+		ArrayList<Integer> x = new ArrayList<Integer>();
+		int i = column+numColumns;
+		while(i < numColumns*numRows)
+		{	
+			int y = Integer.parseInt(CSVUserData.get(i));
+			x.add(y);
+			i = i+numColumns;
+		}
+		return x;
+	}
+	
+	@Override
+	public List<Double> getDataDouble(int column)
+	{
+		ArrayList<Double> x = new ArrayList<Double>();
+		int i = column+numColumns;
+		while(i < numColumns*numRows)
+		{	
+			double y = Double.parseDouble(CSVUserData.get(i));
+			x.add(y);
+			i = i+numColumns;
+		}
+		return x;
 	}
 
 	
