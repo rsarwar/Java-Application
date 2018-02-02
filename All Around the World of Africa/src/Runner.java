@@ -39,7 +39,7 @@ public class Runner extends Application{
 		//x.printData();
 		System.out.println(x.getDataString(1));
 		System.out.println(x.searchRegion("East"));
-		
+		 
         Application.launch(args);
         
     }

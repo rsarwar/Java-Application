@@ -52,7 +52,7 @@ public class CSVUserUtilities implements CSVUtilities
 			System.out.println("ERROR: File not found!");
 		}
 
-	}
+	} 
 	
 	public boolean checkUserPass()
 	{
