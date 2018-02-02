@@ -1,3 +1,4 @@
+package RunnerStuff;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import javafx.application.Application;
@@ -14,7 +15,7 @@ public class Utilities {
 
 	public static void setIcon()
 	{
-		Image image = newImage(new FileInputStream("wahoorat.png"));
+		Image image = new Image(new FileInputStream("wahoorat.png"));
 		ImageView imageView = new ImageView(image);
 	}
 	

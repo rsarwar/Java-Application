@@ -1,5 +1,5 @@
 
-
+package RunnerStuff;
  import javafx.animation.AnimationTimer;
  import javafx.animation.KeyFrame;
  import javafx.animation.Timeline;
@@ -12,7 +12,6 @@
  import javafx.scene.control.Button;
  import javafx.scene.layout.HBox;
  import javafx.scene.text.Text;
-import java.beans.EventHandler;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import javafx.event.EventHandler;
@@ -23,8 +22,6 @@ import javafx.scene.effect.DropShadow;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-
-import com.sun.glass.events.MouseEvent;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;

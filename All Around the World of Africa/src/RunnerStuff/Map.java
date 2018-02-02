@@ -1,4 +1,4 @@
-
+package RunnerStuff;
 public class Map {
 
 	private int x, y,z;
