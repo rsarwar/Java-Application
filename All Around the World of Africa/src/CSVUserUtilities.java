@@ -56,7 +56,17 @@ public class CSVUserUtilities implements CSVUtilities
 	
 	public boolean checkUserPass()
 	{
+		int passColumn = 2;
 		
+		List<String> userPasses = this.getDataString(passColumn);
+		for(int i = 0; i < userPasses.size(); i++)
+		{
+			if(userPasses.get(i) == this.password)
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 	
 	public void writeCSV(File file)
