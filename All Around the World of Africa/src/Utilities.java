@@ -14,7 +14,13 @@ public class Utilities {
 
 	public static void setIcon()
 	{
-		Image image = newImage(new FileInputStream("wahoorat.png"));
+		Image image;
+		try {
+			image = new Image(new FileInputStream("wahoorat.png"));
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		ImageView imageView = new ImageView(image);
 		imageView.setX(300);
 		imageView.setY(400);
