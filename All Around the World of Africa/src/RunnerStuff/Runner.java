@@ -55,7 +55,19 @@ public class Runner extends Application{
 		StackPane root = new StackPane();
 		Button btn = new Button();
 		Select button1 = new Select(btn,-40,-200,100,300);
-		
+		button1.getButton().addEventHandler(MouseEvent.MOUSE_CLICKED,
+		        new EventHandler<MouseEvent>() {
+		          @Override
+		          public void handle(MouseEvent e) {
+		        	  StackPane root1 = new StackPane();
+		        	  Scene scene1 = new Scene(root1, 830,800);
+		      		//stage.setTitle = ("Map of Africa");
+		      		stage.setScene(scene1);
+		      		stage.show();
+		        	  
+		        	  
+		          }
+		        });
 		root.getChildren().addAll(imageView,button1.getButton());
 		
 		Scene scene = new Scene(root, 830,800);
