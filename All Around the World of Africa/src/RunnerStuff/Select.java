@@ -1,3 +1,4 @@
+package RunnerStuff;
 import java.io.FileNotFoundException;
 
 import javafx.event.EventHandler;
@@ -20,36 +21,40 @@ public class Select {
 		this.length = length;
 		this.width = width;
 		this.button.setStyle("-fx-background-color: transparent;");
-	}
-	public void relocate()
-	{
-		
 		this.button.setTranslateX(this.x);
 		this.button.setTranslateY(this.y);
-	}
-	//Hello
-	public void setDimensions()
-	{
 		this.button.setMaxHeight(this.length);
 		this.button.setMaxWidth(this.width);
-	}
-	public void hover()
-	{
 		this.button.addEventHandler(MouseEvent.MOUSE_ENTERED,
-		        new EventHandler<MouseEvent>() {
-		          @Override
-		          public void handle(MouseEvent e) {
-		        	  button.setStyle("-fx-background-color: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));");
-		          }
-		        });
-		this.button.addEventHandler(MouseEvent.MOUSE_EXITED,
-		        new EventHandler<MouseEvent>() {
-		          @Override
-		          public void handle(MouseEvent e) {
-		        	  button.setStyle("-fx-background-color: transparent;");
-		          }
-		        });
+			       new EventHandler<MouseEvent>() {
+			          @Override
+			          public void handle(MouseEvent e) {
+			        	  button.setStyle("-fx-background-color: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));");
+			          }
+			        });
+			this.button.addEventHandler(MouseEvent.MOUSE_EXITED,
+			        new EventHandler<MouseEvent>() {
+			          @Override
+			          public void handle(MouseEvent e) {
+			        	  button.setStyle("-fx-background-color: transparent;");
+			          }
+			        }); 
+			this.button.addEventHandler(MouseEvent.MOUSE_ENTERED,
+				       new EventHandler<MouseEvent>() {
+				          @Override
+				          public void handle(MouseEvent e) {
+				        	  button.setStyle("-fx-background-color: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));");
+				          }
+				        });
+				this.button.addEventHandler(MouseEvent.MOUSE_EXITED,
+				        new EventHandler<MouseEvent>() {
+				          @Override
+				          public void handle(MouseEvent e) {
+				        	  button.setStyle("-fx-background-color: transparent;");
+				          }
+				        }); 
 	}
+
 	public void newRegion(Stage stage)throws FileNotFoundException
 	{
 		this.button.addEventHandler(MouseEvent.MOUSE_CLICKED,
@@ -65,5 +70,9 @@ public class Select {
 		        	  
 		          }
 		        });
+	}*/
+	public Button getButton()
+	{
+		return this.button;
 	}
 }

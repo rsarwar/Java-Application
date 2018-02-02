@@ -53,42 +53,10 @@ public class Runner extends Application{
 		imageView.setPreserveRatio(true);
 		
 		StackPane root = new StackPane();
-		Button button1 = new Button();
-		button1.setTranslateX(-40);
-		button1.setTranslateY(-200);
-		button1.setMaxHeight(100);
-		button1.setMaxWidth(300);
-		button1.setStyle("-fx-background-color: transparent;");
+		Button btn = new Button();
+		Select button1 = new Select(btn,-40,-200,100,300);
 		
-		
-		button1.addEventHandler(MouseEvent.MOUSE_ENTERED,
-		        new EventHandler<MouseEvent>() {
-		          @Override
-		          public void handle(MouseEvent e) {
-		        	  button1.setStyle("-fx-background-color: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));");
-		          }
-		        });
-		button1.addEventHandler(MouseEvent.MOUSE_EXITED,
-		        new EventHandler<MouseEvent>() {
-		          @Override
-		          public void handle(MouseEvent e) {
-		        	  button1.setStyle("-fx-background-color: transparent;");
-		          }
-		        });
-		button1.addEventHandler(MouseEvent.MOUSE_CLICKED,
-		        new EventHandler<MouseEvent>() {
-		          @Override
-		          public void handle(MouseEvent e) {
-		        	  StackPane root1 = new StackPane();
-		        	  Scene scene1 = new Scene(root1, 830,800);
-		      		//stage.setTitle = ("Map of Africa");
-		      		stage.setScene(scene1);
-		      		stage.show();
-		        	  
-		        	  
-		          }
-		        });
-		root.getChildren().addAll(imageView,button1);
+		root.getChildren().addAll(imageView,button1.getButton());
 		
 		Scene scene = new Scene(root, 830,800);
 		//stage.setTitle = ("Map of Africa");
