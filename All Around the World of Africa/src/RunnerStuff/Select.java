@@ -43,8 +43,8 @@ public class Select {
 				       new EventHandler<MouseEvent>() {
 				          @Override
 				          public void handle(MouseEvent e) {
-				        	  button.setStyle("-fx-background-color: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));");
-				          }
+				        	  button.setStyle("-fx-background-color: yellow;");
+				          }//-fx-background-color: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2))
 				        });
 				this.button.addEventHandler(MouseEvent.MOUSE_EXITED,
 				        new EventHandler<MouseEvent>() {

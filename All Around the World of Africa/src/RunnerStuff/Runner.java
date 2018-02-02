@@ -53,10 +53,26 @@ public class Runner extends Application{
 		imageView.setPreserveRatio(true);
 		
 		StackPane root = new StackPane();
-		Button btn = new Button();
-		Select button1 = new Select(btn,-40,-200,100,300);
-		
-		root.getChildren().addAll(imageView,button1.getButton());
+		Button btn3 = new Button();
+		Button btn1 = new Button();
+		Button btn2 = new Button();
+		Select button3 = new Select(btn3,-40,-100,100,100);
+		Select button2 = new Select(btn2,-140,-80,100,200);
+		Select button1 = new Select(btn1,-40,-200,100,300);
+		button1.getButton().addEventHandler(MouseEvent.MOUSE_CLICKED,
+		        new EventHandler<MouseEvent>() {
+		          @Override
+		          public void handle(MouseEvent e) {
+		        	  StackPane root1 = new StackPane();
+		        	  Scene scene1 = new Scene(root1, 830,800);
+		      		//stage.setTitle = ("Map of Africa");
+		      		stage.setScene(scene1);
+		      		stage.show();
+		        	  
+		        	  
+		          }
+		        });
+		root.getChildren().addAll(imageView,button1.getButton(),button2.getButton(),button3.getButton());
 		
 		Scene scene = new Scene(root, 830,800);
 		//stage.setTitle = ("Map of Africa");
