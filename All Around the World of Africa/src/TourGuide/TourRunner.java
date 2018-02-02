@@ -3,13 +3,11 @@ package TourGuide;
 //https://www.youtube.com/watch?v=rYRpiTyZ09k
 import java.util.Scanner;
 	/**Kaitlyn Cao
-	 * January 2018
-	 *  
-	 * */
+	 * January 2018 
+	 **/
 	 
 	//http://pitt.libguides.com/c.php?g=12378&p=65814 USEFUL!! 
 public class TourRunner {
-		
 	public String name = "";
 		public static void main(String[] args)
 		{
@@ -18,11 +16,10 @@ public class TourRunner {
 			in = new Scanner(System.in);
 
 			String name = in.next();
-			String statement = in.nextLine();
 			System.out.println("Nice to meet you " + name + "!");
 			System.out.println("Did you know that Africa is broken down into 5 regions?");
 			
-			
+			String statement = in.nextLine();
 			statement = in.nextLine();
 
 
@@ -66,7 +63,7 @@ public class TourRunner {
 				
 				if(statement.toLowerCase().equals("south"))
 				{
-					SouthRegion  chatbot5 = new SouthRegion();
+					SouthRegion chatbot5 = new SouthRegion();
 					System.out.println(chatbot5.greetUser());
 				}			
 			}
@@ -74,10 +71,28 @@ public class TourRunner {
 			
 			if(statement.equals("no"))
 			{ 
+				System.out.println("These are the regions Africa is broken into: ");
 				for(String str: regions)
 				{
 					System.out.println(str);
 				}
+				System.out.println("Where would you like to go?");
+				statement = in.nextLine();
+
+				if(statement.toLowerCase().equals("north"))
+				{
+					NorthRegion chatbot1 = new NorthRegion();
+					System.out.println(chatbot1.greetUser());
+					
+					/*
+					while(!statement.equals("Bye"))
+					{
+						System.out.println(chatbot2.);
+					}
+					*/
+				}
+				
+
 			}
 			
 			/*
@@ -90,6 +105,13 @@ public class TourRunner {
 			}
 			*/
 		}
+		
+		public String getResponse(String statement)
+		{
+			return "";
+		}
+		
+		 
 		
 		 static String[] regions = {"North", "East", "Central", "West", "South"};
 		 static String[] northC = {"Algeria", "Egypt", "Libya", "Morocco", "Sudan", "Tunisia", "Western Sahara"};
