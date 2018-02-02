@@ -54,6 +54,11 @@ public class CSVUserUtilities implements CSVUtilities
 
 	}
 	
+	public boolean checkUserPass()
+	{
+		
+	}
+	
 	public void writeCSV(File file)
 	{
 		PrintWriter pw = null;

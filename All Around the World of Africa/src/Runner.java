@@ -33,11 +33,12 @@ public class Runner extends Application{
 
     public static void main(String[] args) {
     	File data = new File("africa.csv");
-		CSVUtilities x = new CSVUtilities(data);
+		CSVWorldUtilities x = new CSVWorldUtilities();
+		x.CSVUtilities(data);
 		
 		//x.printData();
 		System.out.println(x.getDataString(1));
-		System.out.println(x.searchRegion("South"));
+		System.out.println(x.searchRegion("East"));
 		
         Application.launch(args);
         
