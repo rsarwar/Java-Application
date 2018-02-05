@@ -82,6 +82,15 @@ public class CSVUserUtilities implements CSVUtilities
 		}
 		StringBuilder sb = new StringBuilder();
 		
+        for(int i = 0; i < CSVUserData.size(); i++)
+        {
+        	sb.append(CSVUserData.get(i));
+        	sb.append(',');
+        	if(i%2 == 0 )
+        	{
+        		sb.append('\n');
+        	}
+        }
         
         sb.append(this.username);
         sb.append(',');
@@ -92,7 +101,7 @@ public class CSVUserUtilities implements CSVUtilities
         
         pw.write(sb.toString());
         pw.close();
-        //System.out.println("done!");
+        System.out.println("done!");
 	}
 	
 	public void printData()
@@ -105,7 +114,10 @@ public class CSVUserUtilities implements CSVUtilities
 		{
 			for(int i = 0; i < y; i++)
 			{	
-				System.out.print(this.CSVUserData.get(a) + "  ");
+				if(a < CSVUserData.size())
+				{
+					System.out.print(this.CSVUserData.get(a) + "  ");					
+				}
 				a++;
 			}
 			System.out.println();

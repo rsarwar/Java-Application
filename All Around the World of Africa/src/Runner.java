@@ -32,15 +32,21 @@ public class Runner extends Application{
     }
 
     public static void main(String[] args) {
-    	File data = new File("africa.csv");
+    	File data1 = new File("africa.csv");
+    	File data2 = new File("users.csv");
 		CSVWorldUtilities x = new CSVWorldUtilities();
-		x.CSVUtilities(data);
+		x.CSVUtilities(data1);
+		
+		CSVUserUtilities y = new CSVUserUtilities();
+		y.CSVUtilities(data2);
+		y.printData();
+		y.username = "heck";
+		y.password = "heck3";
+		y.writeCSV(data2);
 		
 		//x.printData();
 		System.out.println(x.getDataString(1));
 		System.out.println(x.searchRegion("East"));
-		
-		File userData = new File("users.csv");
 		 
         Application.launch(args);
         
