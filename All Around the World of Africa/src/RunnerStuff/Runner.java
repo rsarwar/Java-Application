@@ -76,11 +76,24 @@ public class Runner extends Application{
 		
 		Scene scene = new Scene(root, 830,800);
 		//stage.setTitle = ("Map of Africa");
+		
+		
+		root.addEventHandler(MouseEvent.MOUSE_PRESSED,
+			       new EventHandler<MouseEvent>() {
+			          @Override
+			          public void handle(MouseEvent e) {
+			        	  int x=(int) e.getX();
+						   int y=(int) e.getY();
+						
+						  System.out.println(x+","+y);
+			          }
+			        });
+		
 		stage.setScene(scene);
 		stage.show();
 		
     }
-
+	
     public static void main(String[] args) {
         Application.launch(args);
     }

@@ -33,7 +33,15 @@ public class TourRunner {
 				if(statement.toLowerCase().equals("north"))
 				{
 					NorthRegion chatbot1 = new NorthRegion();
-					System.out.println(chatbot1.greetUser());
+					while(!statement.equals("Bye"))
+					{
+						System.out.println(chatbot1.greetUser());
+						statement = in.nextLine();
+						System.out.print(chatbot1.getResponse(statement));
+						statement=in.nextLine();
+					}
+			
+					
 					
 					/*
 					while(!statement.equals("Bye"))
@@ -108,7 +116,12 @@ public class TourRunner {
 		
 		public String getResponse(String statement)
 		{
-			return "";
+			String response = ":p";
+			if(statement.equals(" "))
+			{
+				 response = "please, say something :C\n";
+			}
+			return response;
 		}
 		
 		 
