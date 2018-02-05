@@ -28,7 +28,7 @@ public class Runner extends Application{
 		//stage.setTitle = ("Map of Africa");
 		stage.setScene(scene);
 		stage.show();
-		
+		 
     }
 
     public static void main(String[] args) {
