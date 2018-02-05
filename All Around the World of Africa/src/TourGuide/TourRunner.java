@@ -69,7 +69,7 @@ public class TourRunner {
 			}
 			
 			
-			if(statement.equals("no"))
+			if(statement.toLowerCase().equals("no"))
 			{ 
 				System.out.println("These are the regions Africa is broken into: ");
 				for(String str: regions)

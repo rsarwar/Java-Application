@@ -123,5 +123,5 @@ public class NorthRegion {
 	static String[] facts = {"North Africa is an economically prosperous area.", "This subregion generates one-third of Africa's total GDP"};
 	static String[] northC = {"Algeria", "Egypt", "Libya", "Morocco", "Sudan", "Tunisia", "Western Sahara"};
 
-	NTunisia chatbot1 = new NTunisia();
+	NCountries chatbot1 = new NCountries();
 }

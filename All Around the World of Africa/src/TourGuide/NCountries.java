@@ -1,6 +1,6 @@
 package TourGuide;
 import java.util.Scanner;
 
-public class NTunisia {
+public class NCountries {
 
 }
