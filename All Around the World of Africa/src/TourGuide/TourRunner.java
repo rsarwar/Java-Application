@@ -2,7 +2,9 @@ package TourGuide;
 
 //https://www.youtube.com/watch?v=rYRpiTyZ09k
 import java.util.Scanner;
-	/**Kaitlyn Cao
+import java.util.Random;
+
+/**Kaitlyn Cao
 	 * January 2018  
 	 **/
 	 
@@ -11,7 +13,7 @@ public class TourRunner {
 	public String name = "";
 		public static void main(String[] args)
 		{
-			System.out.println("Welcome to Africa! I'm Leyla and I'll be your tour guide :) What's your name? ");
+			System.out.println("Welcome to Africa! I'm Leyla and I'll be your tour guide :) What's your name?");
 			
 			in = new Scanner(System.in);
 
@@ -91,7 +93,7 @@ public class TourRunner {
 					}
 					*/
 				}
-				
+			 //getResponse(statement);	
 
 			}
 			
@@ -108,10 +110,29 @@ public class TourRunner {
 		
 		public String getResponse(String statement)
 		{
-			return "";
+			Random r = new Random();
+			String response = "";
+			if(statement.length() == 0)
+			{
+				response = "C'mon talk to me :(";
+			}
+			response = neutralResponses[r.nextInt(neutralResponses.length)];
+			return response;
 		}
 		
-		 
+		
+		static String[] neutralResponses = {"Huh?", "Same", "Wat ._."};
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		 static String[] regions = {"North", "East", "Central", "West", "South"};
 		 static String[] northC = {"Algeria", "Egypt", "Libya", "Morocco", "Sudan", "Tunisia", "Western Sahara"};
