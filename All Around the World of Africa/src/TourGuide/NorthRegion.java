@@ -39,7 +39,34 @@ public class NorthRegion {
 	{
 		String response = "";
 		statement = statement.trim();
-		
+		if(findKeyword(statement, "Algeria") >= 0)
+		{
+			response = "";
+		}
+		if(findKeyword(statement, "Egypt") >= 0)
+		{
+			response = "";
+		}
+		if(findKeyword(statement, "Libya") >= 0)
+		{
+			response = "";
+		}
+		if(findKeyword(statement, "Morocco") >= 0)
+		{
+			response = "";
+		}
+		if(findKeyword(statement, "Sudan") >= 0)
+		{
+			response = "";
+		}
+		if(findKeyword(statement, "Tunisia") >= 0)
+		{
+			response = "";
+		}
+		if(findKeyword(statement, "Western Sahara") >= 0)
+		{
+			response = "";
+		}		
 		return response;
 	}
 	/**
