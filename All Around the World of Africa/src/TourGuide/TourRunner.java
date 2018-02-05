@@ -88,6 +88,7 @@ public class TourRunner {
 				statement = in.nextLine();
 
 				if(statement.toLowerCase().equals("north"))
+					//fadfaf
 				{
 					NorthRegion chatbot1 = new NorthRegion();
 					System.out.println(chatbot1.greetUser());
