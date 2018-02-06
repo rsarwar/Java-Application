@@ -1,3 +1,5 @@
+package RunnerStuff;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -7,11 +9,14 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CSVWorldUtilities implements CSVUtilities
+public class CSVUserUtilities implements CSVUtilities
 {
-	ArrayList<String> CSVWorldData = new ArrayList<String>();
+	ArrayList<String> CSVUserData = new ArrayList<String>();
 	int numColumns = 0;
 	int numRows = 0;
+	String username = "";
+	String password = ""; 
+	
 	
 	public void CSVUtilities(File csv)
 	{
@@ -31,7 +36,7 @@ public class CSVWorldUtilities implements CSVUtilities
 							numColumns = attributes.length;
 							for(int x = 0; x < numColumns; x++ )
 							{
-								CSVWorldData.add(attributes[x]);
+								CSVUserData.add(attributes[x]);
 							}
 							numRows++;
 							line = filein.readLine(); 
@@ -49,8 +54,57 @@ public class CSVWorldUtilities implements CSVUtilities
 			System.out.println("ERROR: File not found!");
 		}
 
+	} 
+	
+	public boolean checkUserPass()
+	{
+		int passColumn = 2;
+		
+		List<String> userPasses = this.getDataString(passColumn);
+		for(int i = 0; i < userPasses.size(); i++)
+		{
+			if(userPasses.get(i) == this.password)
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 	
+	public void writeCSV(File file)
+	{
+		PrintWriter pw = null;
+		try
+		{
+			pw = new PrintWriter(file);
+		}
+		catch(FileNotFoundException e)
+		{
+			System.err.println(e);
+		}
+		StringBuilder sb = new StringBuilder();
+		
+        for(int i = 0; i < CSVUserData.size(); i++)
+        {
+        	sb.append(CSVUserData.get(i));
+        	sb.append(',');
+        	if(i%2 == 0 ) 
+        	{
+        		sb.append('\n');
+        	}
+        }
+        
+        sb.append(this.username);
+        sb.append(',');
+        sb.append(this.password);
+        sb.append('\n');
+        
+        
+        
+        pw.write(sb.toString());
+        pw.close();
+        System.out.println("done!");
+	}
 	
 	public void printData()
 	{
@@ -62,7 +116,10 @@ public class CSVWorldUtilities implements CSVUtilities
 		{
 			for(int i = 0; i < y; i++)
 			{	
-				System.out.print(this.CSVWorldData.get(a) + "  ");
+				if(a < CSVUserData.size())
+				{
+					System.out.print(this.CSVUserData.get(a) + "  ");					
+				}
 				a++;
 			}
 			System.out.println();
@@ -76,7 +133,7 @@ public class CSVWorldUtilities implements CSVUtilities
 		int i = column+numColumns;
 		while(i < numColumns*numRows-1)
 		{	
-			String y = CSVWorldData.get(i);
+			String y = CSVUserData.get(i);
 			x.add(y);
 			i = i+numColumns;
 		}
@@ -90,7 +147,7 @@ public class CSVWorldUtilities implements CSVUtilities
 		int i = column+numColumns;
 		while(i < numColumns*numRows)
 		{	
-			int y = Integer.parseInt(CSVWorldData.get(i));
+			int y = Integer.parseInt(CSVUserData.get(i));
 			x.add(y);
 			i = i+numColumns;
 		}
@@ -104,34 +161,11 @@ public class CSVWorldUtilities implements CSVUtilities
 		int i = column+numColumns;
 		while(i < numColumns*numRows)
 		{	
-			double y = Double.parseDouble(CSVWorldData.get(i));
+			double y = Double.parseDouble(CSVUserData.get(i));
 			x.add(y);
 			i = i+numColumns;
 		}
 		return x;
-	}
-	 
-	public List<String> searchRegion(String region)
-	{
-		int countryColumn = 1;
-		int regionColumn = 2;
-		
-		List<String> a = this.getDataString(countryColumn);
-		List<String> b = this.getDataString(regionColumn);
-		ArrayList<String> countries = new ArrayList<String>();
-		
-		for(int j = 0; j < a.size(); j++)
-		{
-			if(b.get(j).equals(region))
-			{
-				countries.add(a.get(j));
-				//System.out.println(b.get(j));
-				
-			}
-		}	
-		//System.out.println(b.size());
-		return countries;
-		 
 	}
 
 	

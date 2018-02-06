@@ -12,8 +12,11 @@ package RunnerStuff;
  import javafx.scene.control.Button;
  import javafx.scene.layout.HBox;
  import javafx.scene.text.Text;
+
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+
 import javafx.event.EventHandler;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -95,6 +98,25 @@ public class Runner extends Application{
     }
 	
     public static void main(String[] args) {
+    	File data1 = new File("africa.csv");
+    	File data2 = new File("users.csv");
+		CSVWorldUtilities africaData = new CSVWorldUtilities();
+		africaData.CSVUtilities(data1);
+		
+		CSVUserUtilities userData = new CSVUserUtilities();
+		userData.CSVUtilities(data2);
+		userData.printData();
+		userData.username = "heck";
+		userData.password = "heck3";
+		userData.writeCSV(data2);
+		
+		Region northRegion = new Region("North");
+		northRegion.regionsCountries = Region.apples();
+		
+		//x.printData();
+		System.out.println(africaData.getDataString(1));
+		System.out.println(africaData.searchRegion("East"));
+		 
         Application.launch(args);
     }
 }
