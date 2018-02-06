@@ -53,12 +53,17 @@ public class Runner extends Application{
 		imageView.setPreserveRatio(true);
 		
 		StackPane root = new StackPane();
+		/*Image imageDecline = new Image(getClass().getResourceAsStream("not.png"));
+		Button button5 = new Button();
+		button5.setGraphic(new ImageView(imageDecline));*/
 		Button btn3 = new Button();
 		Button btn1 = new Button();
 		Button btn2 = new Button();
 		Select button3 = new Select(btn3,-40,-100,100,100);
 		Select button2 = new Select(btn2,-140,-80,100,200);
 		Select button1 = new Select(btn1,-40,-200,100,300);
+		Image regionOne = new Image("images/region1 copy.png");
+		btn1.setGraphic(new ImageView(regionOne));
 		button1.getButton().addEventHandler(MouseEvent.MOUSE_CLICKED,
 		        new EventHandler<MouseEvent>() {
 		          @Override
