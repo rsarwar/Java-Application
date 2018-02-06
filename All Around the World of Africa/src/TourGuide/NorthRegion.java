@@ -58,11 +58,11 @@ public class NorthRegion {
 		{
 			response = "";
 		}
-		if(findKeyword(statement1, "Sudan") >= 0)
+		//if(findKeyword(statement1, "Sudan") >= 0)
 		{
 			response = "";
 		}
-		if(findKeyword(statement1, "Tunisia") >= 0)
+		//if(findKeyword(statement1, "Tunisia") >= 0)
 		{
 			response = "";
 		}
