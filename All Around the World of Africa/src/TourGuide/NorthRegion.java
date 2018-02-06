@@ -71,7 +71,7 @@ public class NorthRegion {
 			response = "";
 		}		
 		return response;
-	}
+	} 
 	/**
 	 * Search for one word in phrase. The search is not case
 	 * sensitive. This method will check that the given goal
