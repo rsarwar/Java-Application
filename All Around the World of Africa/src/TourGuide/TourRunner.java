@@ -16,7 +16,7 @@ public class TourRunner {
 	
 		public static void main(String[] args)
 		{
-			System.out.println("Welcome to Africa! I'm Leyla and I'll be your tour guide :) What's your name?");
+			System.out.println("Welcome to Africa! I'm Leyla and I'll be your tour guide :) 			What's your name?");
 			
 			in = new Scanner(System.in);
 
