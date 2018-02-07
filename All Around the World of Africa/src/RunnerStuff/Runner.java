@@ -64,6 +64,8 @@ public class Runner extends Application{
 		Select button1 = new Select(btn1,-40,-200,100,300);
 		Image regionOne = new Image("images/region1 copy.png");
 		btn1.setGraphic(new ImageView(regionOne));
+		Image regionTwo = new Image("images/REGIONdsfvsdf.png");
+		btn2.setGraphic(new ImageView(regionTwo));
 		button1.getButton().addEventHandler(MouseEvent.MOUSE_CLICKED,
 		        new EventHandler<MouseEvent>() {
 		          @Override

@@ -25,8 +25,5 @@ public class Rectangle2D {
 	{
 		return this.length;
 	}
-	public boolean contains(int point)
-	{
-		
-	}
+	
 }

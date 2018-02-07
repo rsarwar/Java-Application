@@ -1,9 +1,12 @@
 package RunnerStuff;
 import java.io.FileNotFoundException;
 
+import com.sun.prism.Image;
+
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
@@ -13,8 +16,10 @@ public class Select {
 	
 	private Button button;
 	private int x,y,length,width;
-	public Select(Button button,int x, int y, int length, int width)
+	//private Image Switchimage;
+	public Select(Button button,int x, int y, int length, int width)//Image image)
 	{
+		//this.Switchimage = image;
 		this.button = button;
 		this.x = x;
 		this.y = y;
@@ -29,7 +34,8 @@ public class Select {
 			       new EventHandler<MouseEvent>() {
 			          @Override
 			          public void handle(MouseEvent e) {
-			        	  button.setStyle("-fx-background-color: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));");
+			        	 // button.setGraphic(new ImageView(image));
+			        	  //button.setStyle("-fx-background-color: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));");
 			          }
 			        });
 			this.button.addEventHandler(MouseEvent.MOUSE_EXITED,
