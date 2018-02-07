@@ -105,19 +105,18 @@ public class Runner extends Application{
 		
 		CSVUserUtilities userData = new CSVUserUtilities();
 		userData.CSVUtilities(data2);
-		userData.printData();
+		//userData.printData();
 		userData.username = "heck";
 		userData.password = "heck3";
-		userData.writeCSV(data2);
+		//userData.writeCSV(data2);
 		
 		Region northRegion = new Region("North");
 		northRegion.addCountries(africaData);
-		
 		northRegion.printNamesOfCountries();
 		
 		//x.printData();
-		System.out.println(africaData.getDataString(0));
-		System.out.println(africaData.searchRegion("North"));
+		//System.out.println(africaData.getDataString(0));
+		//System.out.println(africaData.searchRegion("North"));
 		 
         Application.launch(args);
     }

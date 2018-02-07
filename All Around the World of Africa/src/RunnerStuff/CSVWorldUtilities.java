@@ -123,15 +123,12 @@ public class CSVWorldUtilities implements CSVUtilities
 		List<String> b = this.getDataString(regionColumn);
 		ArrayList<String> countries = new ArrayList<String>();
 		
-		for(int j = 0; j < a.size(); j++)
+		for(int j = 0; j < a.size()-2; j++)
 		{
 			if(b.get(j).equals(region))
 			{
-				countries.add(a.get(j));
-				
-				
+				countries.add(a.get(j));		
 			}
-			System.out.println(j);
 		}	
 		//System.out.println(b.size());
 		return countries;
