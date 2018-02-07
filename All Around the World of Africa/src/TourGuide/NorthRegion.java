@@ -23,7 +23,7 @@ public class NorthRegion {
 	
 	public String getResponse(String statement) {
 
-		String response = "";
+		String response = ""; 
 		Random r = new Random();
 		if(statement.length() == 0)
 		{
