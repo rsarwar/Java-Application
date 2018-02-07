@@ -115,10 +115,11 @@ public class CSVWorldUtilities implements CSVUtilities
 	 
 	public List<String> searchRegion(String region)
 	{
-		int countryColumn = 1;
-		int regionColumn = 2;
+		int countryColumn = 0;
+		int regionColumn = 1;
 		
 		List<String> a = this.getDataString(countryColumn);
+		System.out.println(a);
 		List<String> b = this.getDataString(regionColumn);
 		ArrayList<String> countries = new ArrayList<String>();
 		
@@ -127,9 +128,10 @@ public class CSVWorldUtilities implements CSVUtilities
 			if(b.get(j).equals(region))
 			{
 				countries.add(a.get(j));
-				//System.out.println(b.get(j));
+				
 				
 			}
+			System.out.println(j);
 		}	
 		//System.out.println(b.size());
 		return countries;

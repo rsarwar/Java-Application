@@ -111,11 +111,13 @@ public class Runner extends Application{
 		userData.writeCSV(data2);
 		
 		Region northRegion = new Region("North");
-		northRegion.regionsCountries = Region.apples();
+		northRegion.addCountries(africaData);
+		
+		northRegion.printNamesOfCountries();
 		
 		//x.printData();
-		System.out.println(africaData.getDataString(1));
-		System.out.println(africaData.searchRegion("East"));
+		System.out.println(africaData.getDataString(0));
+		System.out.println(africaData.searchRegion("North"));
 		 
         Application.launch(args);
     }

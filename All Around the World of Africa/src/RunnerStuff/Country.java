@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class Country
 {
-	ArrayList<Integer> coordinates = new ArrayList<Integer>();
-	String region = "";
-	String countryName = "";
+	private ArrayList<Integer> coordinates = new ArrayList<Integer>();
+	private String region = "";
+	private String countryName = "";
 	
 	public Country(String region, String countryName)
 	{

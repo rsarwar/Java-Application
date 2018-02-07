@@ -1,11 +1,12 @@
 package RunnerStuff;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Region 
 {
-	ArrayList<Country> regionsCountries = new ArrayList<Country>();
-	String regionName = "";
+	private ArrayList<Country> regionsCountries = new ArrayList<Country>();
+	private String regionName = "";
 	
 	public Region(/*ArrayList<Country> regionsCountries,*/ String regionName)
 	{
@@ -13,17 +14,32 @@ public class Region
 		this.regionName = regionName;
 	}
 	
-	//public notnamingthis
+	public ArrayList<Country> getRegionsCountries()
 	{
+		return this.regionsCountries;
+	}
+
+	
+	public void addCountries(CSVWorldUtilities countryData)
+	{
+		//Junk is a placeholder for the names of the countries returned from searchRegion.
 		
+		List<String> junk = countryData.searchRegion(this.regionName);
+		
+		for(int i = 0; i < junk.size(); i++)
+		{
+			Country x = new Country(this.regionName, junk.get(i));
+			regionsCountries.add(x);
+		}
 	}
 	
-	public ArrayList<Country> apples()
+	public void printNamesOfCountries()
 	{
-		for(int i = 0; i < this.regionsCountries.size(); i++)
-		{
-			
+		for(int i = 0; i < this.getRegionsCountries().size(); i++)
+		{	
+			System.out.print(this.getRegionsCountries().get(i).getCountryName() + "  ");
 		}
-		return null;
+		System.out.println();
+		
 	}
 }
