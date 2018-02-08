@@ -14,6 +14,9 @@ package RunnerStuff;
  import javafx.scene.layout.HBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
+import javafx.scene.text.TextAlignment;
+import javafx.scene.text.TextFlow;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import javafx.event.EventHandler;
@@ -39,28 +42,46 @@ import javafx.application.Application;
  import javafx.scene.layout.HBox;
  import javafx.scene.paint.Color;
  import javafx.stage.Stage; 
-
 public class TESTRunner extends Application{
 
 	@Override public void start(Stage stage) throws FileNotFoundException {
         
 		stage.setTitle("All Around the World of Africa");
 		
+		//stage.getStylesheets().add("http://fonts.googleapis.com/css?family=Gafata");
+		
 		Image image = new Image(new FileInputStream("africa-regions-map.jpg"));
 		ImageView imageView = new ImageView(image);
-		imageView.setX(5);
-		imageView.setY(25);
-		imageView.setFitHeight(830);
-		imageView.setFitWidth(800);
+		imageView.setTranslateX(-600);
+		imageView.setTranslateY(50);
+		imageView.setFitHeight(580);
+		imageView.setFitWidth(550);
+		
+		Image profile = new Image(new FileInputStream("profile.png"));
+		ImageView pImageView = new ImageView(profile);
+		pImageView.setTranslateX(-800);
+		pImageView.setTranslateY(-350);
+	
+		Image icon = new Image(new FileInputStream("wahoorat.png"));
+		ImageView iconView = new ImageView(icon);
+		iconView.setTranslateX(800);
+		iconView.setTranslateY(-350);
 		
 		Text t = new Text();
 		t.setText("The Majestical World of Africa");
-		t.setFont(Font.font((""));
+		t.setFont(Font.font("Verdana", 50));
+		t.setTextAlignment(TextAlignment.CENTER);
+		t.setFill(Color.BLACK);
+		t.setTranslateY(-400.0f);
+		
 		imageView.setPreserveRatio(true);
 		
 		StackPane root = new StackPane();
 
 		root.getChildren().addAll(imageView);
+		root.getChildren().addAll(pImageView);
+		root.getChildren().addAll(iconView);
+
 		root.getChildren().add(t);
 		
 		Scene scene = new Scene(root, 3000,1000);
