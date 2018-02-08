@@ -30,8 +30,8 @@ public class Select {
 		this.button.setStyle("-fx-background-color: transparent;");
 		this.button.setTranslateX(this.x);
 		this.button.setTranslateY(this.y);
-		this.button.setMaxHeight(this.length);
-		this.button.setMaxWidth(this.width);
+		//this.button.setMaxHeight(this.length);
+		//this.button.setMaxWidth(this.width);
 		this.button.addEventHandler(MouseEvent.MOUSE_ENTERED,
 			       new EventHandler<MouseEvent>() {
 			          @Override
