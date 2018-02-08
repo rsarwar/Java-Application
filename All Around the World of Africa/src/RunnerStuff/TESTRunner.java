@@ -12,7 +12,8 @@ package RunnerStuff;
  import javafx.scene.Scene;
  import javafx.scene.control.Button;
  import javafx.scene.layout.HBox;
- import javafx.scene.text.Text;
+import javafx.scene.text.Font;
+import javafx.scene.text.Text;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import javafx.event.EventHandler;
@@ -39,10 +40,12 @@ import javafx.application.Application;
  import javafx.scene.paint.Color;
  import javafx.stage.Stage; 
 
-public class Runner extends Application{
+public class TESTRunner extends Application{
 
 	@Override public void start(Stage stage) throws FileNotFoundException {
         
+		stage.setTitle("All Around the World of Africa");
+		
 		Image image = new Image(new FileInputStream("africa-regions-map.jpg"));
 		ImageView imageView = new ImageView(image);
 		imageView.setX(5);
@@ -50,53 +53,18 @@ public class Runner extends Application{
 		imageView.setFitHeight(830);
 		imageView.setFitWidth(800);
 		
-		
+		Text t = new Text();
+		t.setText("The Majestical World of Africa");
+		t.setFont(Font.font((""));
 		imageView.setPreserveRatio(true);
 		
 		StackPane root = new StackPane();
-		/*Image imageDecline = new Image(getClass().getResourceAsStream("not.png"));
-		Button button5 = new Button();
-		button5.setGraphic(new ImageView(imageDecline));*/
-		Button btn3 = new Button();
-		Button btn1 = new Button();
-		Button btn2 = new Button();
-		Select button3 = new Select(btn3,-40,-100,100,100);
-		Select button2 = new Select(btn2,-140,-80,100,200);
-		Select button1 = new Select(btn1,-40,-200,100,300);
-		Image regionOne = new Image("images/region1 copy.png");
-		btn1.setGraphic(new ImageView(regionOne));
-		Image regionTwo = new Image("images/REGIONdsfvsdf.png");
-		btn2.setGraphic(new ImageView(regionTwo));
-		button1.getButton().addEventHandler(MouseEvent.MOUSE_CLICKED,
-		        new EventHandler<MouseEvent>() {
-		          @Override
-		          //FAEFDSAD
-		          public void handle(MouseEvent e) {
-		        	  StackPane root1 = new StackPane();
-		        	  Scene scene1 = new Scene(root1, 830,800);
-		      		//stage.setTitle = ("Map of Africa");
-		      		stage.setScene(scene1);
-		      		stage.show();
-		        	  
-		        	  
-		          }
-		        });
-		root.getChildren().addAll(imageView,button1.getButton(),button2.getButton(),button3.getButton());
+
+		root.getChildren().addAll(imageView);
+		root.getChildren().add(t);
 		
-		Scene scene = new Scene(root, 830,800);
-		//stage.setTitle = ("Map of Africa");
-		
-		
-		root.addEventHandler(MouseEvent.MOUSE_PRESSED,
-			       new EventHandler<MouseEvent>() {
-			          @Override
-			          public void handle(MouseEvent e) {
-			        	  int x=(int) e.getX();
-						   int y=(int) e.getY();
-						
-						  System.out.println(x+","+y);
-			          }
-			        });
+		Scene scene = new Scene(root, 3000,1000);
+
 		
 		stage.setScene(scene);
 		stage.show();
