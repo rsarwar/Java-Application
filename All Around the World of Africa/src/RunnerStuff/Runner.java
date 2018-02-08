@@ -1,5 +1,4 @@
-/**
- * */
+
 package RunnerStuff;
  import javafx.animation.AnimationTimer;
  import javafx.animation.KeyFrame;
@@ -80,7 +79,7 @@ public class Runner extends Application{
 		      		stage.setScene(scene1);
 		      		stage.show();
 		        	  
-		        	  
+		        	  //gdsgv
 		          }
 		        });
 		root.getChildren().addAll(imageView,button1.getButton(),button2.getButton()/*button3.getButton()*/);
