@@ -49,7 +49,7 @@ public class Runner extends Application{
 		imageView.setFitHeight(830);
 		imageView.setFitWidth(800);
 		
-		
+		//efsdf
 		imageView.setPreserveRatio(true);
 		
 		StackPane root = new StackPane();
