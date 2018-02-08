@@ -2,7 +2,9 @@ package RunnerStuff;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/*
+ * Miriam Monroe and Ramisha Sarwar
+ */
 public class Region 
 {
 	private ArrayList<Country> regionsCountries = new ArrayList<Country>();

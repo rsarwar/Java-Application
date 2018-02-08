@@ -8,7 +8,9 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
-
+/*
+ * Miriam Monroe and Ramisha Sarwar
+ */
 public class CSVUserUtilities implements CSVUtilities
 {
 	ArrayList<String> CSVUserData = new ArrayList<String>();
