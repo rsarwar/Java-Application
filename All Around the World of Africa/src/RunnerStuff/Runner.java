@@ -56,16 +56,16 @@ public class Runner extends Application{
 		/*Image imageDecline = new Image(getClass().getResourceAsStream("not.png"));
 		Button button5 = new Button();
 		button5.setGraphic(new ImageView(imageDecline));*/
-		Button btn3 = new Button();
+		//Button btn3 = new Button();
 		Button btn1 = new Button();
-		Button btn2 = new Button();
-		Select button3 = new Select(btn3,-40,-100,100,100);
-		Select button2 = new Select(btn2,-140,-80,100,200);
-		Select button1 = new Select(btn1,-40,-200,100,300);
-		Image regionOne = new Image("images/region1 copy.png");
+		//Button btn2 = new Button();
+		//Select button3 = new Select(btn3,-40,-100,100,100);
+		//Select button2 = new Select(btn2,-140,-80,100,200);
+		Select button1 = new Select(btn1,-40,-200,100,300,"images/NORTH_AFRICA.png", "images/NORTH_AFRICA_TWO.png");
+		Image regionOne = new Image("images/NORTH_AFRICA.png");
 		btn1.setGraphic(new ImageView(regionOne));
-		Image regionTwo = new Image("images/REGIONdsfvsdf.png");
-		btn2.setGraphic(new ImageView(regionTwo));
+		//Image regionTwo = new Image("images/REGIONdsfvsdf.png");
+		//btn2.setGraphic(new ImageView(regionTwo));
 		button1.getButton().addEventHandler(MouseEvent.MOUSE_CLICKED,
 		        new EventHandler<MouseEvent>() {
 		          @Override
@@ -80,7 +80,7 @@ public class Runner extends Application{
 		        	  
 		          }
 		        });
-		root.getChildren().addAll(imageView,button1.getButton(),button2.getButton(),button3.getButton());
+		root.getChildren().addAll(imageView,button1.getButton()/*button2.getButton(),button3.getButton()*/);
 		
 		Scene scene = new Scene(root, 830,800);
 		//stage.setTitle = ("Map of Africa");

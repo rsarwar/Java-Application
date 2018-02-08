@@ -16,8 +16,8 @@ public class Select {
 	
 	private Button button;
 	private int x,y,length,width;
-	//private Image Switchimage;
-	public Select(Button button,int x, int y, int length, int width)//Image image)
+	private String imageOne, imageTwo;
+	public Select(Button button,int x, int y, int length, int width, String imageOne, String imageTwo)
 	{
 		//this.Switchimage = image;
 		this.button = button;
@@ -25,6 +25,8 @@ public class Select {
 		this.y = y;
 		this.length = length;
 		this.width = width;
+		this.imageOne = imageOne;
+		this.imageTwo = imageTwo;
 		this.button.setStyle("-fx-background-color: transparent;");
 		this.button.setTranslateX(this.x);
 		this.button.setTranslateY(this.y);
@@ -34,7 +36,7 @@ public class Select {
 			       new EventHandler<MouseEvent>() {
 			          @Override
 			          public void handle(MouseEvent e) {
-			        	 // button.setGraphic(new ImageView(image));
+			        	  button.setGraphic(new ImageView(imageTwo));
 			        	  //button.setStyle("-fx-background-color: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2));");
 			          }
 			        });
@@ -42,10 +44,11 @@ public class Select {
 			        new EventHandler<MouseEvent>() {
 			          @Override
 			          public void handle(MouseEvent e) {
-			        	  button.setStyle("-fx-background-color: transparent;");
+			        	  button.setGraphic(new ImageView(imageOne));
+			        	  //button.setStyle("-fx-background-color: transparent;");
 			          }
 			        }); 
-			this.button.addEventHandler(MouseEvent.MOUSE_ENTERED,
+			/*this.button.addEventHandler(MouseEvent.MOUSE_ENTERED,
 				       new EventHandler<MouseEvent>() {
 				          @Override
 				          public void handle(MouseEvent e) {
@@ -58,7 +61,7 @@ public class Select {
 				          public void handle(MouseEvent e) {
 				        	  button.setStyle("-fx-background-color: transparent;");
 				          }
-				        }); 
+				        }); */
 	}
 
 	public void newRegion(Stage stage)throws FileNotFoundException
