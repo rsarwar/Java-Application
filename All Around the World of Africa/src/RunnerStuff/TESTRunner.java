@@ -84,7 +84,7 @@ public class TESTRunner extends Application{
 
 		root.getChildren().add(t);
 		
-		Scene scene = new Scene(root, 3000,1000);
+		Scene scene = new Scene(root, 3000,1000, Color.CADETBLUE);
 
 		
 		stage.setScene(scene);
