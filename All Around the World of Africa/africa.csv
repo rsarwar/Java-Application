@@ -1,55 +1,55 @@
-"Countries	Regions",
-Algeria,North
-Angola,Central
-Benin,West
-"Botswana	",South
-"Burkina Faso	",West
-"Burundi	",East
-"Cameroon	",Central
-"Cape Verde	",West
-"Central African Republic	",Central
-"Chad	",Central
-"Comoros	",East
-"Democratic Republic of the Congo	",Central
-"Republic of the Congo	",Central
-"Djibouti	",East
-"Egypt	",North
-"Equatorial Guinea	",Central
-"Eritrea	",East
-"Ethiopia	",East
-"Gabon	",Central
-"Gambia	",West
-"Ghana	",West
-"Guinea	",West
-"Guinea-Bissau	",West
-"Ivory Coast	",West
-"Kenya	",East
-"Lesotho	",South
-"Liberia	",West
-"Libya	",North
-"Madagascar	",East
-"Malawi	",East
-"Mali	",West
-"Mauritania	",West
-"Mauritius	",East
-"Morocco	",North
-"Mozambique	",East
-"Namibia	",South
-"Niger	",West
-"Nigeria	",West
-"Rwanda	",East
-"Sao Tome and Principe	",Central
-"Senegal	",West
-"Seychelles	",East
-"Sierra Leone	",West
-"Somalia	",East
-"South Africa	",South
-"South Sudan	",North
-"Sudan	",North
-"Swaziland	",South
-"Tanzania	",East
-"Togo	",West
-"Tunisia	",North
-"Uganda	",East
-"Zambia	",East
-"Zimbabwe	",East
+Countries,Regions,Currency,Language(s) Spoken,Popular Food
+Algeria,North,a,b,c
+Angola,Central,a,b,c
+Benin,West,a,b,c
+"Botswana	",South,a,b,c
+"Burkina Faso	",West,a,b,c
+"Burundi	",East,a,b,c
+"Cameroon	",Central,a,b,c
+"Cape Verde	",West,a,b,c
+"Central African Republic	",Central,a,b,c
+"Chad	",Central,a,b,c
+"Comoros	",East,a,b,c
+"Democratic Republic of the Congo	",Central,a,b,c
+"Republic of the Congo	",Central,a,b,c
+"Djibouti	",East,a,b,c
+"Egypt	",North,a,b,c
+"Equatorial Guinea	",Central,a,b,c
+"Eritrea	",East,a,b,c
+"Ethiopia	",East,a,b,c
+"Gabon	",Central,a,b,c
+"Gambia	",West,a,b,c
+"Ghana	",West,a,b,c
+"Guinea	",West,a,b,c
+"Guinea-Bissau	",West,a,b,c
+"Ivory Coast	",West,a,b,c
+"Kenya	",East,a,b,c
+"Lesotho	",South,a,b,c
+"Liberia	",West,a,b,c
+"Libya	",North,a,b,c
+"Madagascar	",East,a,b,c
+"Malawi	",East,a,b,c
+"Mali	",West,a,b,c
+"Mauritania	",West,a,b,c
+"Mauritius	",East,a,b,c
+"Morocco	",North,a,b,c
+"Mozambique	",East,a,b,c
+"Namibia	",South,a,b,c
+"Niger	",West,a,b,c
+"Nigeria	",West,a,b,c
+"Rwanda	",East,a,b,c
+"Sao Tome and Principe	",Central,a,b,c
+"Senegal	",West,a,b,c
+"Seychelles	",East,a,b,c
+"Sierra Leone	",West,a,b,c
+"Somalia	",East,a,b,c
+"South Africa	",South,a,b,c
+"South Sudan	",North,a,b,c
+"Sudan	",North,a,b,c
+"Swaziland	",South,a,b,c
+"Tanzania	",East,a,b,c
+"Togo	",West,a,b,c
+"Tunisia	",North,Tunisian Dinar,Arabic,Couscous
+"Uganda	",East,a,b,c
+"Zambia	",East,a,b,c
+"Zimbabwe	",East,a,b,c

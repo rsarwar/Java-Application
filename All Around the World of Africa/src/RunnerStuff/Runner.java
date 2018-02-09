@@ -12,8 +12,11 @@ package RunnerStuff;
  import javafx.scene.control.Button;
  import javafx.scene.layout.HBox;
  import javafx.scene.text.Text;
+
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+
 import javafx.event.EventHandler;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -38,6 +41,9 @@ import javafx.application.Application;
  import javafx.scene.paint.Color;
  import javafx.stage.Stage; 
 
+ /*
+  * Miriam Monroe and Ramisha Sarwar
+  */
 public class Runner extends Application{
 
 	@Override public void start(Stage stage) throws FileNotFoundException {
@@ -105,6 +111,32 @@ public class Runner extends Application{
     }
 	
     public static void main(String[] args) {
+    	File data1 = new File("africa.csv");
+    	File data2 = new File("users.csv");
+    	File data3 = new File("chatlogs.csv");
+		CSVWorldUtilities africaData = new CSVWorldUtilities();
+		africaData.CSVUtilities(data1);
+		
+		CSVUserUtilities userData = new CSVUserUtilities();
+		userData.CSVUtilities(data2);
+		//userData.printData();
+		userData.username = "heck";
+		userData.password = "heck3";
+		//userData.writeCSV(data2);
+		
+		//CSVChatUtilities chatLogs = new CSVChatUtilities();
+		//chatLogs.CSVUtilities(data3);
+		//chatLogs.writeCSV(data3, "APPLES");
+		
+		Region northRegion = new Region("North");
+		northRegion.addCountries(africaData);
+		northRegion.printNamesOfCountries();
+		
+		//x.printData();
+		System.out.println(africaData.getDataString(3));
+		System.out.println(africaData.searchRegion("North"));
+		System.out.println(africaData.numColumns);
+		
         Application.launch(args);
     }
 }
