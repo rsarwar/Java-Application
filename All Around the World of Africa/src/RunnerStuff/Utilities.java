@@ -15,7 +15,7 @@ import javafx.stage.Stage;
 
 public class Utilities {
 
-	public static void setIcon()
+	public static void setIcon() throws FileNotFoundException
 	{
 		Image image = new Image(new FileInputStream("wahoorat.png"));
 		ImageView imageView = new ImageView(image);

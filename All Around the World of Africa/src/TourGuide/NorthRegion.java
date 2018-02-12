@@ -10,8 +10,8 @@ public class NorthRegion {
 	private Scanner input;
 	public String greetUser()
 	{
+		Scanner in = new Scanner(System.in);
 		System.out.println("Welcome to the North region of Africa! I see you've met Leyla :D I'm Brendon :)");
-		input = new Scanner(System.in);
 		System.out.println("There are 7 different countries that can be found in this region.");
 		for(String str: northC)
 		{
@@ -22,7 +22,8 @@ public class NorthRegion {
 	}
 	
 	public String getResponse(String statement) {
-		String response = "";
+
+		String response = ""; 
 		Random r = new Random();
 		if(statement.length() == 0)
 		{
@@ -36,13 +37,15 @@ public class NorthRegion {
 	}
 	
 	public String determineCountry(String statement)
-	{
+	{	
 		String response = "";
 		statement = statement.trim();
 		if(findKeyword(statement, "Algeria") >= 0)
 		{
-			response = "";
+			NCountries chatbot6 = new NCountries();
+			System.out.println(chatbot6.greetUser());
 		}
+		
 		if(findKeyword(statement, "Egypt") >= 0)
 		{
 			response = "";
@@ -55,7 +58,7 @@ public class NorthRegion {
 		{
 			response = "";
 		}
-		if(findKeyword(statement, "Sudan") >= 0)
+		 if(findKeyword(statement, "Sudan") >= 0)
 		{
 			response = "";
 		}
@@ -68,7 +71,7 @@ public class NorthRegion {
 			response = "";
 		}		
 		return response;
-	}
+	} 
 	/**
 	 * Search for one word in phrase. The search is not case
 	 * sensitive. This method will check that the given goal

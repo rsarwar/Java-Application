@@ -59,15 +59,25 @@ public class Runner extends Application{
 		imageView.setPreserveRatio(true);
 		
 		StackPane root = new StackPane();
-		Button btn3 = new Button();
+		/*Image imageDecline = new Image(getClass().getResourceAsStream("not.png"));
+		Button button5 = new Button();
+		button5.setGraphic(new ImageView(imageDecline));*/
+		//Button btn3 = new Button();
 		Button btn1 = new Button();
 		Button btn2 = new Button();
-		Select button3 = new Select(btn3,-40,-100,100,100);
-		Select button2 = new Select(btn2,-140,-80,100,200);
-		Select button1 = new Select(btn1,-40,-200,100,300);
+		//Select button3 = new Select(btn3,-40,-100,100,100);
+		//Select button2 = new Select(btn2,-140,-80,100,200);
+		Image regionOne = new Image("images/NORTH_AFRICA.png");
+		btn1.setGraphic(new ImageView(regionOne));
+		Image regionTwo = new Image("images/WEST_AFRICA_ONE.png");
+		btn2.setGraphic(new ImageView(regionTwo));
+		Select button1 = new Select(btn1,0,0,0,0,"images/NORTH_AFRICA.png", "images/NORTH_AFRICA_TWO.png");
+		Select button2 = new Select(btn2,0,200,0,0,"images/WEST_AFRICA_ONE.png", "images/WEST_AFRICA_TWO.png");
+		
 		button1.getButton().addEventHandler(MouseEvent.MOUSE_CLICKED,
 		        new EventHandler<MouseEvent>() {
 		          @Override
+		          //FAEFDSAD
 		          public void handle(MouseEvent e) {
 		        	  StackPane root1 = new StackPane();
 		        	  Scene scene1 = new Scene(root1, 830,800);
@@ -75,10 +85,10 @@ public class Runner extends Application{
 		      		stage.setScene(scene1);
 		      		stage.show();
 		        	  
-		        	  
+		        	  //gdsgv
 		          }
 		        });
-		root.getChildren().addAll(imageView,button1.getButton(),button2.getButton(),button3.getButton());
+		root.getChildren().addAll(imageView,button1.getButton(),button2.getButton()/*button3.getButton()*/);
 		
 		Scene scene = new Scene(root, 830,800);
 		//stage.setTitle = ("Map of Africa");
