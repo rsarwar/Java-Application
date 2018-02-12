@@ -1,7 +1,7 @@
 Countries,Regions,Currency,Language(s) Spoken,Popular Food
-Algeria,North,a,b,c
-Angola,Central,a,b,c
-Benin,West,a,b,c
+Algeria,North,Algerian dinar,b,c
+Angola,Central,Angolan kwanza,b,c
+Benin,West,West African CFA franc,b,c
 "Botswana	",South,a,b,c
 "Burkina Faso	",West,a,b,c
 "Burundi	",East,a,b,c
