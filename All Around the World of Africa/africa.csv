@@ -2,20 +2,20 @@ Countries,Regions,Currency,Language(s) Spoken,Popular Food
 Algeria,North,Algerian dinar,b,c
 Angola,Central,Angolan kwanza,b,c
 Benin,West,West African CFA franc,b,c
-"Botswana	",South,a,b,c
-"Burkina Faso	",West,a,b,c
-"Burundi	",East,a,b,c
-"Cameroon	",Central,a,b,c
-"Cape Verde	",West,a,b,c
-"Central African Republic	",Central,a,b,c
-"Chad	",Central,a,b,c
-"Comoros	",East,a,b,c
-"Democratic Republic of the Congo	",Central,a,b,c
-"Republic of the Congo	",Central,a,b,c
-"Djibouti	",East,a,b,c
-"Egypt	",North,a,b,c
-"Equatorial Guinea	",Central,a,b,c
-"Eritrea	",East,a,b,c
+"Botswana	",South,Botswana pula,b,c
+"Burkina Faso	",West,West African CFA franc,b,c
+"Burundi	",East,Burundi franc,b,c
+"Cameroon	",Central,Central African CFA franc,b,c
+"Cape Verde	",West,Cape Verdean escudo,b,c
+"Central African Republic	",Central, Central African CFA franc,b,c
+"Chad	",Central,Central African CFA franc,b,c
+"Comoros	",East,Comorian franc,b,c
+"Democratic Republic of the Congo	",Central,Congolese franc,b,c
+"Republic of the Congo	",Central,Central African CFA franc,b,c
+"Djibouti	",East, Djiboutian franc,b,c
+"Egypt	",North,Egyptian pound,b,c
+"Equatorial Guinea	",Central,Central African CFA franc,b,c
+"Eritrea	",East,Eritrean nakfa,b,c
 "Ethiopia	",East,a,b,c
 "Gabon	",Central,a,b,c
 "Gambia	",West,a,b,c
