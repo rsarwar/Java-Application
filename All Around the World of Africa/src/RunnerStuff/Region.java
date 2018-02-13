@@ -20,6 +20,11 @@ public class Region
 	{
 		return this.regionsCountries;
 	}
+	
+	public String getRegionName()
+	{
+		return this.regionName;
+	}
 
 	
 	public void addCountries(CSVWorldUtilities countryData)
@@ -33,6 +38,8 @@ public class Region
 			Country x = new Country(this.regionName, junk.get(i));
 			regionsCountries.add(x);
 		}
+		
+		
 	}
 	
 	public void printNamesOfCountries()

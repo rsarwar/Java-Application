@@ -1,55 +1,55 @@
-Countries,Regions,Currency,Language(s) Spoken,Popular Food
-Algeria,North,Algerian dinar,b,Harira
-Angola,Central,Angolan kwanza,b,Cocada amarela
-Benin,West,West African CFA franc,b,Garri
-"Botswana	",South,Botswana pula,b,Koeksister
-"Burkina Faso	",West,West African CFA franc,b,Tô
-"Burundi	",East,Burundi franc,b,Ibiharage
-"Cameroon	",Central,Central African CFA franc,b,Koki
-"Cape Verde	",West,Cape Verdean escudo,b,Cachupa
-"Central African Republic	",Central, Central African CFA franc,b,Nshima
-"Chad	",Central,Central African CFA franc,b,Daraba
-"Comoros	",East,Comorian franc,b,Langouste a la vanille
-"Democratic Republic of the Congo	",Central,Congolese franc,b,Babute
-"Republic of the Congo	",Central,Central African CFA franc,b,Manioc
-"Djibouti	",East, Djiboutian franc,b,Injera
-"Egypt	",North,Egyptian pound,b,Fig roll
-"Equatorial Guinea	",Central,Central African CFA franc,b,Peppersoup
-"Eritrea	",East,Eritrean nakfa,b,Fit-fit
-"Ethiopia	",East,Ethiopian birr,b,Ga'at
-"Gabon	",Central,Central African CFA franc,b,Atanga
-"Gambia	",West,Gambian dalasi,b,Tapalapa bread
-"Ghana	",West,Ghanaian cedi,b,Kenkey
-"Guinea	",West, Guinean franc,b,Tapalapa bread
-Guinea-Bissau,West,a West African CFA franc,b,Egusi
-"Ivory Coast	",West,West African CFA franc,b,Placali
-"Kenya	",East,Kenyan shilling,b,Obusuma
-"Lesotho	",South,Lesotho loti,b,Motoho
-"Liberia	",West,Liberian dollar,b,Kelewele
-"Libya	",North,Libyan dinar,b,Bazeen
-"Madagascar	",East,Malagasy ariary,b,Nshima
-"Malawi	",East,Malawian kwacha,b,Kachumbari
-"Mali	",West,West African CFA franc,b,Maafe
-"Mauritania	",West,Mauritanian ouguiya,b,Méchoui
-"Mauritius	",East,Mauritian rupee,b,Gateau Piment
-"Morocco	",North,Moroccan dirham,b,Matbucha
-"Mozambique	",East,Mozambican metical,b,Ncima
-"Namibia	",South,Namibian dollar,b,Biltong
-"Niger	",West,West African CFA franc,b,Suya
-"Nigeria	",West,Nigerian naira,b,Edikang Ikong
-"Rwanda	",East,Rwandan franc,b,Ugali
-"Sao Tome and Principe	",Central,Sao Tome and Principe dobra,b,Arroz doce
-"Senegal	",West,West African CFA franc,b,Thieboudienne
-"Seychelles	",East,Seychellois rupee,b,Ladob
-"Sierra Leone	",West,Sierra Leonean leone,b,Garri
-"Somalia	",East,Somali shilling,b,Lahoh
-"South Africa	",South,South African rand,b,Lamington
-"South Sudan	",North,South Sudanese pound,b,Kajaik
-"Sudan	",North,Sudanese pound,b,Shahan ful
-"Swaziland	",South,Swazi lilangeni,b,Sorghum
-"Tanzania	",East,Tanzanian shilling,b,Mandazi
-"Togo	",West,West African CFA franc,b,Garri
-"Tunisia	",North,Tunisian Dinar,Arabic,Couscous
-"Uganda	",East,Ugandan shilling,b,Matoke
-"Zambia	",East,Zambian kwacha,b,Biltong
-"Zimbabwe	",East,United States dollar,b,Boerewors
+Countries,Regions,Currency,Language(s) Spoken,Popular Food,Fast Facts
+Algeria,North,Algerian dinar,b,Harira,"Algerian dates are known to be some of the best on earth.  The official religion is Islam and it is illegal to proselytize (advocate or promote) to the people about any other religion. Even though Western clothing is common, mostly in urban areas, traditional Muslim clothing is also common."
+Angola,Central,Angolan kwanza,b,Cocada amarela,"Angola's traditional music is the semba, it is the birthplace of the dreadlocks hair style, and it's national tree is the majestic imbondeiro."
+Benin,West,West African CFA franc,b,Garri,"Benin is named after the body of water on which it lies – the ‘Bight of Benin’. In the country’s culture, it is considered bad to eat with the left hand or offer another person something with it. People of the country do not like to be photographed. They believe that a photograph can be used to cast a sell or a course."
+"Botswana	",South,Botswana pula,b,Koeksister,"Botswana has the Okavango Delta, which is the largest inland delta in the world. None of the water in the Okavango Delta reaches the sea. The Makgadikgadi Pans are the largest salt pans in the world."
+"Burkina Faso	",West,West African CFA franc,b,Tô,"Burkina Faso is home to 60 different ethnic groups, each with their own variety of folk music. Gold is Burkina Faso’s main export, and Burkina Faso’s third-biggest export is shea nuts."
+"Burundi	",East,Burundi franc,b,Ibiharage,"Group jogging is banned in Burundi, as such walks can help people plan subversive (anti-government) activities. The country imports twice as much as it exports."
+"Cameroon	",Central,Central African CFA franc,b,Koki,"Lake Nyos is considered the most deadly in the world as poisonous gases seep out from the volcano below. The country receives plenty of rainfall every year, making it one of the wettest places on Earth."
+"Cape Verde	",West,Cape Verdean escudo,b,Cachupa,he archipelago lies approximately 600 km off the coast of West Africa. Nine of the ten islands of the archipelago are inhabited. It is estimated that the islands have one goat for every two people.
+"Central African Republic	",Central, Central African CFA franc,b,Nshima,Central African artists have produced both watercolour and oil paintings. Football (soccer) is the most popular recreational pastime. Basketball is the country’s most popular sport and a good way to forge connections with the people of the Central African Republic.
+"Chad	",Central,Central African CFA franc,b,Daraba,The Tibesti Mountains are home to some of the best camel racing in the world. The country has seen long-lasting conflicts between Muslims and Christians. Chad is also known as “The Babel Tower of the World.“
+"Comoros	",East,Comorian franc,b,Langouste a la vanille,"The country’s islands are mostly volcanic with interiors that range from low hills to steep mountains. The country is the largest producer of ylang-ylang, which is an ingredient used in the making of fragrance oils."
+"Democratic Republic of the Congo	",Central,Congolese franc,b,Babute,"The Democratic Republic of the Congo is the second largest country in Africa. The Democratic Republic of the Congo hosts the United Nations’ largest peacekeeping mission in the world, with over 21,000 soldiers from approximately 50 different countries."
+"Republic of the Congo	",Central,Central African CFA franc,b,Manioc,"The Congo Basin rainforest is the world’s second largest rainforest. Meat is expensive because it has to be hunted or imported. For this reason, little meat is eaten."
+"Djibouti	",East, Djiboutian franc,b,Injera,Lac Assal of Djibouti is the saltiest lake outside of Antarctica. Another famous lake located in Djibouti is Lake Abbe. This lake is also famous as the place of the discovery of Australopithecus skeleton Lucy.
+"Egypt	",North,Egyptian pound,b,Fig roll,The largest Arabic population in the world lives in Egypt. The Nile Valley is one of the least densely populated areas in the world. The country only receives 1 inch of rain per year.
+"Equatorial Guinea	",Central,Central African CFA franc,b,Peppersoup,"Equatorial Guinea is one of the richest countries in Africa because of oil exports, but the wealth is distributed unevenly with most going to a corrupt authoritarian government while the rest of the population lives in poverty."
+"Eritrea	",East,Eritrean nakfa,b,Fit-fit,"Eritrea capital city Asmara is also called the ""Italy's African City"" or ""New Rome"". This, due to the distinctive Italian touch it exudes. The Denakil Depression is the lowest point in the country and is considered to be one of the world’s hottest places. One of the world’s oldest human fossils was excavated here and many experts believe this country to be the cradle of the earth."
+"Ethiopia	",East,Ethiopian birr,b,Ga'at,"Founded in 980 B.C., Ethiopia is one of the oldest nations in the world. The Great Rift Valley cuts through Ethiopia from northeast to south of the country and is the only physical feature of Africa that it visible from space."
+"Gabon	",Central,Central African CFA franc,b,Atanga,Gabon is home to 80% of Africa’s Gorilla population. It also has hundreds of dolomite and limestone caves many of which are still unexplored. The economy of the country depends on timber and manganese.
+"Gambia	",West,Gambian dalasi,b,Tapalapa bread,"Gambia is one of the smallest countries in Africa. Although the Gambia River runs provides water for farming, the soil is sandy and poor, and crops don’t grow well. Peanuts are one of the few things they grow in this country and are one of the country’s largest exports."
+"Ghana	",West,Ghanaian cedi,b,Kenkey,"The name Ghana means warrior king and harks back to the days of the Ghana Empire between the ninth and 13th centuries. The black star in Ghana’s flag was adopted from legendary Pan African leader Marcus Garvey’s Universal Negro Improvement Association and African Communities League, which had the Black Star Line Steamship company."
+"Guinea	",West, Guinean franc,b,Tapalapa bread,Gambia has highlands are covered with forests and savanna. The northern part of the country is mostly desert land.
+Guinea-Bissau,West,a West African CFA franc,b,Egusi,"Guinea-Bissau, has a swampy coast, with forests changing to grasslands in the east. Once hailed as a potential model for African development, Guinea-Bissau is now one of the poorest countries in the world."
+"Ivory Coast	",West,West African CFA franc,b,Placali," Ivory Coast is the world’s leading producer of cocoa beans, supplying 33 per cent of the total. Queen Abla Pokou is the legendary founder of the Ivory Coast and is said to have led the Baoulé people there from Ghana in the mid-18th century."
+"Kenya	",East,Kenyan shilling,b,Obusuma,"Coffee is a huge export in Kenya, but it is not consumed in the country. Kenyans believe that all of the coffee they produce should be sold outside of their country, so they drink tea or beer. Most Kenyans sleep under a mosquito tent in order to keep from getting bit. Many diseases can be transferred by mosquito bites, so sleeping under a net is also a safety precaution."
+"Lesotho	",South,Lesotho loti,b,Motoho,"Lesotho is ruled by a constitutional monarchy and is one of the 3 remaining kingdoms in Africa. The lowest point above sealevel in Lesotho is 1500 metres, making it the country with the highest low point in the world."
+"Liberia	",West,Liberian dollar,b,Kelewele,Liberia is the only country in Africa with native Africans that is founded by the people of United States.
+"Libya	",North,Libyan dinar,b,Bazeen,
+"Madagascar	",East,Malagasy ariary,b,Nshima,
+"Malawi	",East,Malawian kwacha,b,Kachumbari,
+"Mali	",West,West African CFA franc,b,Maafe,
+"Mauritania	",West,Mauritanian ouguiya,b,Méchoui,
+"Mauritius	",East,Mauritian rupee,b,Gateau Piment,
+"Morocco	",North,Moroccan dirham,b,Matbucha,
+"Mozambique	",East,Mozambican metical,b,Ncima,
+"Namibia	",South,Namibian dollar,b,Biltong,
+"Niger	",West,West African CFA franc,b,Suya,
+"Nigeria	",West,Nigerian naira,b,Edikang Ikong,
+"Rwanda	",East,Rwandan franc,b,Ugali,
+"Sao Tome and Principe	",Central,Sao Tome and Principe dobra,b,Arroz doce,
+"Senegal	",West,West African CFA franc,b,Thieboudienne,
+"Seychelles	",East,Seychellois rupee,b,Ladob,
+"Sierra Leone	",West,Sierra Leonean leone,b,Garri,
+"Somalia	",East,Somali shilling,b,Lahoh,
+"South Africa	",South,South African rand,b,Lamington,
+"South Sudan	",North,South Sudanese pound,b,Kajaik,
+"Sudan	",North,Sudanese pound,b,Shahan ful,
+"Swaziland	",South,Swazi lilangeni,b,Sorghum,
+"Tanzania	",East,Tanzanian shilling,b,Mandazi,
+"Togo	",West,West African CFA franc,b,Garri,
+"Tunisia	",North,Tunisian Dinar,Arabic,Couscous,
+"Uganda	",East,Ugandan shilling,b,Matoke,
+"Zambia	",East,Zambian kwacha,b,Biltong,
+"Zimbabwe	",East,United States dollar,b,Boerewors,

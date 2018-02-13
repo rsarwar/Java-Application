@@ -9,9 +9,9 @@ public class Country
 	private ArrayList<Integer> coordinates = new ArrayList<Integer>();
 	private String region = "";
 	private String countryName = "";
-	private ArrayList<String> countryInfo = new ArrayList<String>();
+	private String countryInfo = "";
 	
-	public Country(String region, String countryName)
+	public Country(String region, String countryName, String countryInfo )
 	{
 		this.region = region;
 		this.countryName = countryName;
@@ -32,7 +32,7 @@ public class Country
 		return this.coordinates;
 	}
 	
-	public ArrayList<String> getCountryInfo()
+	public String getCountryInfo()
 	{
 		return this.countryInfo;
 	}
