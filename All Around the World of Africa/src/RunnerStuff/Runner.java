@@ -84,8 +84,8 @@ public class Runner extends Application{
 		Select button1 = new Select(btn1,-60,-140,0,0,"images/NORTH.png", "images/NORTH_ONE.png");
 		Select button2 = new Select(btn2,-160,-90,0,0,"images/WEST.png", "images/WEST_ONE.png");
 		Select button3 = new Select(btn3,40,280,0,0,"images/SOUTHERN.png", "images/SOUTHERN_ONE.png");
-		Select button4 = new Select(btn4,0,0,0,0,"images/EASTERN.png", "images/EASTERN_ONE.png");
-		Select button5 = new Select(btn5,0,0,0,0,"images/CENTRAL.png", "images/CENTRAL_ONE.png");
+		Select button4 = new Select(btn4,160,80,0,0,"images/EASTERN.png", "images/EASTERN_ONE.png");
+		Select button5 = new Select(btn5,20,0,0,0,"images/CENTRAL.png", "images/CENTRAL_ONE.png");
 		
 		/*button1.getButton().addEventHandler(MouseEvent.MOUSE_CLICKED,
 		        new EventHandler<MouseEvent>() {
@@ -101,7 +101,7 @@ public class Runner extends Application{
 		        	  //gdsgv
 		          }
 		        });*/
-		root.getChildren().addAll(imageView,button1.getButton(),button2.getButton(),button3.getButton()/*button4.getButton(),button5.getButton()*/);
+		root.getChildren().addAll(imageView,button1.getButton(),button2.getButton(),button3.getButton(),button4.getButton(),button5.getButton());
 		
 		Scene scene = new Scene(root, 830,800);
 		//stage.setTitle = ("Map of Africa");
