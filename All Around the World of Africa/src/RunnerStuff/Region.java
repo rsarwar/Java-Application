@@ -38,6 +38,8 @@ public class Region
 		List<String> countryList  = africaData.getDataString(countryColumn);
 		List<String> infoList = africaData.getDataString(infoColumn);
 		
+		System.out.println(infoList);
+		
 		for(int i = 0; i < searchedCountries.size(); i++)
 		{
 			Country x = new Country(this.regionName, searchedCountries.get(i));
@@ -52,6 +54,7 @@ public class Region
 				if(countryList.get(j).equals(regionsCountries.get(k).getCountryName()))
 				{
 						regionsCountries.get(k).updateInfo(infoList.get(j));
+						System.out.println(infoList.get(j));
 				}
 			}
 		}

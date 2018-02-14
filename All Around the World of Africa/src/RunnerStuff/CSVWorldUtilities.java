@@ -14,7 +14,7 @@ import java.util.List;
 public class CSVWorldUtilities implements CSVUtilities
 {
 	ArrayList<String> CSVWorldData = new ArrayList<String>();
-	int numColumns = 0;
+	int numColumns = 7;
 	int numRows = 0;
 	
 	public void CSVUtilities(File csv)
@@ -32,7 +32,7 @@ public class CSVWorldUtilities implements CSVUtilities
 						while (line != null)
 						{ 						
 							String[] attributes = line.split(",");
-							numColumns = attributes.length;
+							//numColumns = attributes.length;
 							for(int x = 0; x < numColumns; x++ )
 							{
 								CSVWorldData.add(attributes[x]);
@@ -52,7 +52,7 @@ public class CSVWorldUtilities implements CSVUtilities
 		{
 			System.out.println("ERROR: File not found!");
 		}
-			System.out.println(numColumns);
+			System.out.println(CSVWorldData);
 
 	}
 	
@@ -122,7 +122,6 @@ public class CSVWorldUtilities implements CSVUtilities
 		int regionColumn = 1;
 		
 		List<String> a = this.getDataString(countryColumn);
-		System.out.println(a);
 		List<String> b = this.getDataString(regionColumn);
 		ArrayList<String> countries = new ArrayList<String>();
 		

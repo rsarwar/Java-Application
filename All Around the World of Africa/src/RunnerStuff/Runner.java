@@ -131,6 +131,7 @@ public class Runner extends Application{
 		Region northRegion = new Region("North");
 		northRegion.addCountries(africaData);
 		northRegion.printNamesOfCountries();
+		northRegion.printInfoOfCountries();
 		
 		//x.printData();
 		System.out.println(africaData.getDataString(3));
