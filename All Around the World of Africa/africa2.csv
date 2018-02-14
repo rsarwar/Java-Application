@@ -1,55 +1,55 @@
-Countries,Regions,Currency,Official Language(s) Spoken,Popular Food,Population
-Algeria,North,Algerian dinar,Arabic,c,"42,008,054"
-Angola,Central,Angolan kwanza,Portuguese,c,"30,774,205"
-Benin,West,West African CFA franc,French,c,"11,485,674"
-"Botswana	",South,Botswana pula,Setswana/English,c,"2,333,201"
-"Burkina Faso	",West,West African CFA franc,French,c,"19,751,651"
-"Burundi	",East,Burundi franc,Kirundi/ French,c,"11,216,450"
-"Cameroon	",Central,Central African CFA franc,English/French,c,"24,678,234"
-"Cape Verde	",West,Cape Verdean escudo,Portuguese,c,"553,335"
-"Central African Republic	",Central, Central African CFA franc,French/Sangho,c,"4,737,423"
-"Chad	",Central,Central African CFA franc,French/Arabic,c,"15,353,184"
-"Comoros	",East,Comorian franc,Arabic/French,c,"832,347"
-"Democratic Republic of the Congo	",Central,Congolese franc,French,c,"84,004,989"
-"Republic of the Congo	",Central,Central African CFA franc,French,c,
-"Djibouti	",East, Djiboutian franc,French/ Arabic,c,"971,408"
-"Egypt	",North,Egyptian pound,Arabic,c,"99,375,741"
-"Equatorial Guinea	",Central,Central African CFA franc,Spanish/ French,c,"1,313,894"
-"Eritrea	",East,Eritrean nakfa,Tigrinya (Tigrigna)/Arabic/English,c,"5,187,948"
-"Ethiopia	",East,a,Amharic,c,"107,534,882"
-"Gabon	",Central,a,French,c,"2,067,561"
-"Gambia	",West,a,English,c,"2,163,765"
-"Ghana	",West,a,English,c,"29,463,643"
-"Guinea	",West,a,French,c,"13,052,608"
-"Guinea-Bissau	",West,a,Portuguese,c,"1,907,268"
-"Ivory Coast	",West,a,French,c,"24,905,843"
-"Kenya	",East,a,English/Kiswahili,c,"50,950,879"
-"Lesotho	",South,a,Sesotho (southern Sotho)/English,c,"2,263,010"
-"Liberia	",West,a,English,c,"4,853,516"
-"Libya	",North,a,Arabic,c,"6,470,956"
-"Madagascar	",East,a,French/Malagasy,c,"26,262,810"
-"Malawi	",East,a,"English/Nyanja (Chichewa, Chewa)",c,"19,164,728"
-"Mali	",West,a,French,c,"19,107,706"
-"Mauritania	",West,a,Arabic,c,"4,540,068"
-"Mauritius	",East,a,English/French,c,"1,268,315"
-"Morocco	",North,a,Arabic,c,"36,191,805"
-"Mozambique	",East,a,Portuguese,c,"30,528,673"
-"Namibia	",South,a,English,c,"2,587,801"
-"Niger	",West,a,French,c,"22,311,375"
-"Nigeria	",West,a,English,c,"195,875,237"
-"Rwanda	",East,a,"Rwanda (Kinyarwanda, Bantu vernacular)/French/English",c,"12,501,156"
-"Sao Tome and Principe	",Central,a,Portuguese,c,"208,818"
-"Senegal	",West,a,French,c,"16,294,270"
-"Seychelles	",East,a,English/French,c,"95,235"
-"Sierra Leone	",West,a,English,c,"7,719,729"
-"Somalia	",East,a,Somali,c,"15,181,925"
-"South Africa	",South,a,Afrikaans/ English/isiNdebele/ Pedi/ Sesotho (Sotho)/ siSwati (Swazi)/ Xitsonga (Tsonga)/Tswana/ Tshivenda (Venda)/isiXhosa/ isiZulu,c,"57,398,421"
-"South Sudan	",North,a,Arabic,c,"12,919,053"
-"Sudan	",North,a,Arabic,c,"41,511,526"
-"Swaziland	",South,a,English/siSwati,c,"1,391,385"
-"Tanzania	",East,a,Kiswahili (Swahili)/Kiunguju/English ,c,"59,091,392"
-"Togo	",West,a,French,c,"7,990,926"
-"Tunisia	",North,Tunisian Dinar,Arabic,Couscous,"11,659,174"
-"Uganda	",East,a,English,c,"44,270,563"
-"Zambia	",East,a,English,c,"17,609,178"
-"Zimbabwe	",East,a,English,c,"16,913,261"
+Countries,Regions,Currency,Official Language(s) Spoken,Popular Food,Population,Fast Facts
+Algeria,North,Algerian dinar,Arabic,c,"42,008,054",
+Angola,Central,Angolan kwanza,Portuguese,c,"30,774,205",
+Benin,West,West African CFA franc,French,c,"11,485,674",
+"Botswana	",South,Botswana pula,Setswana/English,c,"2,333,201",
+"Burkina Faso	",West,West African CFA franc,French,c,"19,751,651",
+"Burundi	",East,Burundi franc,Kirundi/ French,c,"11,216,450",
+"Cameroon	",Central,Central African CFA franc,English/French,c,"24,678,234",
+"Cape Verde	",West,Cape Verdean escudo,Portuguese,c,"553,335",
+"Central African Republic	",Central, Central African CFA franc,French/Sangho,c,"4,737,423",
+"Chad	",Central,Central African CFA franc,French/Arabic,c,"15,353,184",
+"Comoros	",East,Comorian franc,Arabic/French,c,"832,347",
+"Democratic Republic of the Congo	",Central,Congolese franc,French,c,"84,004,989",
+"Republic of the Congo	",Central,Central African CFA franc,French,c,,
+"Djibouti	",East, Djiboutian franc,French/ Arabic,c,"971,408",
+"Egypt	",North,Egyptian pound,Arabic,c,"99,375,741",
+"Equatorial Guinea	",Central,Central African CFA franc,Spanish/ French,c,"1,313,894",
+"Eritrea	",East,Eritrean nakfa,Tigrinya (Tigrigna)/Arabic/English,c,"5,187,948",
+"Ethiopia	",East,a,Amharic,c,"107,534,882",
+"Gabon	",Central,a,French,c,"2,067,561",
+"Gambia	",West,a,English,c,"2,163,765",
+"Ghana	",West,a,English,c,"29,463,643",
+"Guinea	",West,a,French,c,"13,052,608",
+"Guinea-Bissau	",West,a,Portuguese,c,"1,907,268",
+"Ivory Coast	",West,a,French,c,"24,905,843",
+"Kenya	",East,a,English/Kiswahili,c,"50,950,879",
+"Lesotho	",South,a,Sesotho (southern Sotho)/English,c,"2,263,010",
+"Liberia	",West,a,English,c,"4,853,516",
+"Libya	",North,a,Arabic,c,"6,470,956","Libya’s 1,770 kilometers (1099 miles) of Mediterranean Sea coast is the longest of any North African country. Much of the central and eastern area of the country is covered by the Libyan Desert. The Libyan Desert is one of the most sun-baked and arid places on earth."
+"Madagascar	",East,a,French/Malagasy,c,"26,262,810","Republic of Madagascar is the fourth largest island in the world, approximately (587,000 2 km). The capital, Antananarivo, is also Madagascar’s most populated city."
+"Malawi	",East,a,"English/Nyanja (Chichewa, Chewa)",c,"19,164,728","Lilongwe is the capital and largest city of Malawi.  It is an important economic and transportation hub for central Malawi. The Mulanje Massif, also known as Mount Mulanje is a huge granite massif in southern Malawi. "
+"Mali	",West,a,French,c,"19,107,706","Mali is the eighth-largest country in Africa, comparable in size to the nation of South Africa and almost twice the size of the U.S. state of Texas. The thermal equator crosses Mali, making it one of the hottest countries in the world. The Senegal and Niger Rivers make the south of Mali the country’s most fertile region."
+"Mauritania	",West,a,Arabic,c,"4,540,068","The capital of Mauritania is Nouakchott, which means “place of the winds.” If you look at Mauritania from space, you can see a clear bull’s-eye-like image called “The Eye of Africa."" Majority of Mauritanians are devout Muslims and belong to the Sunni sect."
+"Mauritius	",East,a,English/French,c,"1,268,315","The main island of Mauritius (called Mauritius) is only 28 miles wide and 40 miles long. It is of volcanic origin and is almost entirely surrounded by coral reefs. Mauritius is home to some world-famous public beaches including the fun-named “Flic en Flac,” as well as Pereybere, Tamarin, Blue Bay, La Morne, Belle Mare, and Grand Bay."
+"Morocco	",North,a,Arabic,c,"36,191,805","Morocco’s national animal is the Barbary lion. Ethnically, Moroccans are predominately of Berber (North African indigenous) and Arabic decent. Morocco is quite a mountainous country with the Atlas Mountains running from northeast to the southwest through the center and the Rif Mountains located in the north. "
+"Mozambique	",East,a,Portuguese,c,"30,528,673","Maputo, the capital, is a vibrant city with a population of 1.5m, with white sandy beaches and a mural showing the civil war which is 95 metres long. Mozambique's coast runs for 1500 miles and features islands and coral reefs where over 1200 species of fish can be found. Maputo Elephant Reserve is home to a herd of 350 elephants, whose habitat was under threat."
+"Namibia	",South,a,English,c,"2,587,801","Namibia is home to the world’s oldest desert. According to scientists, Namib Desert is over 55 million years old. Namibia also has the largest population of free-roaming cheetahs in the world."
+"Niger	",West,a,French,c,"22,311,375","Agadez is the largest city in the country of Niger. Niger is home to one of the world’s largest protected reserves, the Air and Tenere Natural Reserves, which is the refuge for animals like addax, Cheetah, Oryx and the gazelle. It is also one of the hottest countries in the world and is famously nicknamed as ‘Frying Pan of the World’."
+"Nigeria	",West,a,English,c,"195,875,237","There are over 250 ethnic groups that live throughout Nigeria. Nigeria is the most populous country in Africa, and it is the 17th most populous city in the world. About half of Nigerians are Muslim, while approximately 40% are Christian."
+"Rwanda	",East,a,"Rwanda (Kinyarwanda, Bantu vernacular)/French/English",c,"12,501,156","Rwanda is largely a rural country with about 90% of the population involved in agricultural, agro-processing and mineral work. Rwanda is also known as the Land of a Thousand Hills because most of the country is covered by rolling, grassy hills. The Karisimbi Volcano (4,519 m high) in the Virunga Mountains, is the highest point in Rwanda."
+"Sao Tome and Principe	",Central,a,Portuguese,c,"208,818","Both the islands are part of an extinct volcanic range. Sao Tome and Principe is the second-smallest African country when it comes to population. The island of Sao Tome, which has the capital of the same name, consists of 90% of the total country’s surface area, and is a picturesque town consisting of colonial Portuguese architectural tradition and many attractive parks."
+"Senegal	",West,a,French,c,"16,294,270","The capital of Senegal is the port city of Dakar. Its history has shaped it to be one of the most liberal and cosmopolitan cities of Africa. Much of Senegal is covered in rolling, sandy plains courtesy of the western Sahel – a transition zone between the Sahara desert and Sudanian Savannas. In contemporary times, Senegal is very close to France. In fact, the very flag of Senegal has adopted the French Tricolore style. "
+"Seychelles	",East,a,English/French,c,"95,235","Some of the rarest species of birds can be found in Seychelles, including the bare-legged Scops Owl or Syer. The capital of Seychelles, Victoria, is the smallest capital in the world. You can explore the entire city on foot in less than a day. Seychelles was the land of pirates, in particular Anse Forbans (Pirate’s Cove) on Mahé Island and Côte d’Or on Praslin."
+"Sierra Leone	",West,a,English,c,"7,719,729","One of the top 10 diamond producing nations in the world, it also earns a lot of foreign currency from minerals. With coastal rainfall reaching 495 cm. (195 inches) annually,Sierra Leone is one of Western Africa’s wettest places. The two largest and most dominant ethnic groups of Sierra Leone are teh Menda and Temne."
+"Somalia	",East,a,Somali,c,"15,181,925","Somalia Is situated in the Horn of Africa on the easternmost edge of Africa with the Indian Ocean to the east, Ethiopia to the west, Djibouti to the northwest, Yemen across the Gulf of Aden to the north and Kenya to the southwest. It is flat in the south, with mountains in the north reaching more than 2,000 meters (6,500 feet). Somalia is the only country in the world that does not possess a central form of government."
+"South Africa	",South,a,Afrikaans/ English/isiNdebele/ Pedi/ Sesotho (Sotho)/ siSwati (Swazi)/ Xitsonga (Tsonga)/Tswana/ Tshivenda (Venda)/isiXhosa/ isiZulu,c,"57,398,421","South Africa has deserts, wetlands, grasslands, bush, subtropical forests, mountains and escarpments. South Africa is extremely rich in mining and minerals and considered the world’s leader with nearly 90% of all the platinum metals on earth and around 41% of all the world’s Gold. The oldest remains of modern humans were found in South Africa and are well over 160,000 years old."
+"South Sudan	",North,a,Arabic,c,"12,919,053","Juba is the capital of South Sudan. It is located on the White Nile and is the seat and metropolis of Juba County. It is also the capital of Central Equatoria. The highest point in South Sudan is Mt Kinyeti. The Imatong mountain range lies along the border between South Sudan and Uganda, and Mt Kinyeti is its highest peak at just over 3,000 metres (10,000 ft)."
+"Sudan	",North,a,Arabic,c,"41,511,526","Sudan was once the largest and the most geographically diverse state in South Africa. However, it was split into two countries in July 2011. Now, it is the third largest country in Africa.  The White Nile and the Blue Nile are the two tributaries of the Nile. These two tributaries merge at Khartoum—the capital of Sudan—becoming the Nile River proper before flowing into Egypt."
+"Swaziland	",South,a,English/siSwati,c,"1,391,385","Swaziland is one of the smallest countries in Africa. It is no more than 200 kilometres (120 mi) north to south and 130 kilometres (81 mi) east to west. Sugar, soft drink concentrates, citrus products and wood pulp are the major exports, mainly to South Africa from which the Kingdom of Swaziland receives almost (90 percent) of its imports. Tourism is one of the Kingdom of Swaziland’s biggest industries."
+"Tanzania	",East,a,Kiswahili (Swahili)/Kiunguju/English ,c,"59,091,392","Over 120 languages are spoken in Tanzania. Most of these are Bantu languages, a category of over 535 languages and dialects that are spoken throughout Africa. The world’s earliest human skull was found in the Olduvai Gorge in Tanzania. Tanzania has the largest concentration of wildlife animals per square kilometer, with more than 4 million wild animals and representatives of 430 species and subspecies."
+"Togo	",West,a,French,c,"7,990,926","Togo is a tropical, sub-Saharan nation, highly dependent on agriculture, with a climate that provides good growing seasons. Fazao Mafakassa National Park is the largest National Park in Togo. It is situated between the Kara Region and Centrale Region in semi-mountainous wetland. Lake Togo is the largest part of a lagoon in Togo, separated from the head by a narrow coastal strip. It is shallow and a popular location for water sports."
+"Tunisia	",North,Tunisian Dinar,Arabic,Couscous,"11,659,174","Tunisia has a warm, dry climate and many beautiful beaches. 99 percent of the people who live in Tunisia are Muslim. Tunis is Tunisia’s capital and it’s also the city that gave the country its name. Tunis is situated in the northeast part Tunisia."
+"Uganda	",East,a,English,c,"44,270,563","The country has abundant wildlife, it is home to the endangered mountain gorillas and has nearly 1,061 different bird species. In Uganda, motorcycles are used as taxis to ferry people from one place to another. Agriculture is an important part of the country’s economy as it employs the majority of the Ugandans (almost 1/3rd)."
+"Zambia	",East,a,English,c,"17,609,178","Zambia is drained by two major river basins: the Zambezi/Kafue basin in the centre, west and south covering about three-quarters of the country; and the Congo basin in the north covering about one-quarter of the country. The country is mostly a plateau that rises to 8,000 ft (2,434 m) in the east. Lake Kariba is so huge that in certain parts of it, unknowing visitors think they are looking at the ocean."
+"Zimbabwe	",East,a,English,c,"16,913,261","Zimbabwe is a landlocked plateau country. Manufacturing, mining, and farming constitute the backbone of the Zimbabwean economy. The name of the country was derived from the fortified trading hub, Great Zimbabwe, which was built in medieval times and was used by the people of the ‘Shona’ tribe. The people of this tribe constitute about 70% of the country’s current population."
