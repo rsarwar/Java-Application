@@ -75,19 +75,19 @@ public class Runner extends Application{
 		Image regionTwo = new Image("images/WEST.png");
 		btn2.setGraphic(new ImageView(regionTwo));
 		Image regionThree = new Image("images/SOUTHERN.png");
-		btn3.setGraphic(new ImageView(regionOne));
+		btn3.setGraphic(new ImageView(regionThree));
 		Image regionFour = new Image("images/EASTERN.png");
-		btn4.setGraphic(new ImageView(regionTwo));
+		btn4.setGraphic(new ImageView(regionFour));
 		Image regionFive = new Image("images/CENTRAL.png");
-		btn5.setGraphic(new ImageView(regionOne));
+		btn5.setGraphic(new ImageView(regionFive));
 	
-		Select button1 = new Select(btn1,-60,-140,0,0,"images/NORTH.png", "images/NORTH_ONE.png");
-		Select button2 = new Select(btn2,-160,-90,0,0,"images/WEST.png", "images/WEST_ONE.png");
-		Select button3 = new Select(btn3,40,280,0,0,"images/SOUTHERN.png", "images/SOUTHERN_ONE.png");
-		Select button4 = new Select(btn4,160,80,0,0,"images/EASTERN.png", "images/EASTERN_ONE.png");
-		Select button5 = new Select(btn5,20,0,0,0,"images/CENTRAL.png", "images/CENTRAL_ONE.png");
+		Select button1 = new Select(btn1,-60,-140,"images/NORTH.png", "images/NORTH_ONE.png");
+		Select button2 = new Select(btn2,-160,-90,"images/WEST.png", "images/WEST_ONE.png");
+		Select button3 = new Select(btn3,40,280,"images/SOUTHERN.png", "images/SOUTHERN_ONE.png");
+		Select button4 = new Select(btn4,160,80,"images/EASTERN.png", "images/EASTERN_ONE.png");
+		Select button5 = new Select(btn5,15,25,"images/CENTRAL.png", "images/CENTRAL_ONE.png");
 		
-		/*button1.getButton().addEventHandler(MouseEvent.MOUSE_CLICKED,
+		button1.getButton().addEventHandler(MouseEvent.MOUSE_CLICKED,
 		        new EventHandler<MouseEvent>() {
 		          @Override
 		          //FAEFDSAD
@@ -100,7 +100,63 @@ public class Runner extends Application{
 		        	  
 		        	  //gdsgv
 		          }
-		        });*/
+		        });
+		button2.getButton().addEventHandler(MouseEvent.MOUSE_CLICKED,
+		        new EventHandler<MouseEvent>() {
+		          @Override
+		          //FAEFDSAD
+		          public void handle(MouseEvent e) {
+		        	  StackPane root1 = new StackPane();
+		        	  Scene scene1 = new Scene(root1, 830,800);
+		      		//stage.setTitle = ("Map of Africa");
+		      		stage.setScene(scene1);
+		      		stage.show();
+		        	  
+		        	  //gdsgv
+		          }
+		        });
+		button3.getButton().addEventHandler(MouseEvent.MOUSE_CLICKED,
+		        new EventHandler<MouseEvent>() {
+		          @Override
+		          //FAEFDSAD
+		          public void handle(MouseEvent e) {
+		        	  StackPane root1 = new StackPane();
+		        	  Scene scene1 = new Scene(root1, 830,800);
+		      		//stage.setTitle = ("Map of Africa");
+		      		stage.setScene(scene1);
+		      		stage.show();
+		        	  
+		        	  //gdsgv
+		          }
+		        });
+		button4.getButton().addEventHandler(MouseEvent.MOUSE_CLICKED,
+		        new EventHandler<MouseEvent>() {
+		          @Override
+		          //FAEFDSAD
+		          public void handle(MouseEvent e) {
+		        	  StackPane root1 = new StackPane();
+		        	  Scene scene1 = new Scene(root1, 830,800);
+		      		//stage.setTitle = ("Map of Africa");
+		      		stage.setScene(scene1);
+		      		stage.show();
+		        	  
+		        	  //gdsgv
+		          }
+		        });
+		button5.getButton().addEventHandler(MouseEvent.MOUSE_CLICKED,
+		        new EventHandler<MouseEvent>() {
+		          @Override
+		          //FAEFDSAD
+		          public void handle(MouseEvent e) {
+		        	  StackPane root1 = new StackPane();
+		        	  Scene scene1 = new Scene(root1, 830,800);
+		      		//stage.setTitle = ("Map of Africa");
+		      		stage.setScene(scene1);
+		      		stage.show();
+		        	  
+		        	  //gdsgv
+		          }
+		        });
 		root.getChildren().addAll(imageView,button1.getButton(),button2.getButton(),button3.getButton(),button4.getButton(),button5.getButton());
 		
 		Scene scene = new Scene(root, 830,800);
