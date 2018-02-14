@@ -1,4 +1,5 @@
-
+/**
+ * */
 package RunnerStuff;
  import javafx.animation.AnimationTimer;
  import javafx.animation.KeyFrame;
@@ -11,12 +12,13 @@ package RunnerStuff;
  import javafx.scene.Scene;
  import javafx.scene.control.Button;
  import javafx.scene.layout.HBox;
- import javafx.scene.text.Text;
+import javafx.scene.text.Font;
+import javafx.scene.text.Text;
+import javafx.scene.text.TextAlignment;
+import javafx.scene.text.TextFlow;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-
 import javafx.event.EventHandler;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -40,25 +42,29 @@ import javafx.application.Application;
  import javafx.scene.layout.HBox;
  import javafx.scene.paint.Color;
  import javafx.stage.Stage; 
-
- /*
-  * Miriam Monroe and Ramisha Sarwar
-  */
 public class Runner extends Application{
-
+private Scene scene;
 	@Override public void start(Stage stage) throws FileNotFoundException {
-        
+      
+		stage.setTitle("All Around the World of Africa");
+		
+		//stage.getStylesheets().add("http://fonts.googleapis.com/css?family=Gafata");
+		
+		/*Image image = new Image(new FileInputStream("africa-regions-map.jpg"));
+		ImageView imageView = new ImageView(image);
+		imageView.setTranslateX(-600);
+		imageView.setTranslateY(50);
+		imageView.setFitHeight(580);
+		imageView.setFitWidth(550);*/
 		Image image = new Image(new FileInputStream("africa-regions-map.jpg"));
 		ImageView imageView = new ImageView(image);
-		imageView.setX(5);
-		imageView.setY(25);
-		imageView.setFitHeight(830);
-		imageView.setFitWidth(800);
+		imageView.setTranslateX(-600);
+		imageView.setTranslateY(50);
+		imageView.setFitHeight(580);
+		imageView.setFitWidth(550);
+        imageView.setPreserveRatio(true);
 		
-		
-		imageView.setPreserveRatio(true);
-		
-		StackPane root = new StackPane();
+		//StackPane root = new StackPane();
 		/*Image imageDecline = new Image(getClass().getResourceAsStream("not.png"));
 		Button button5 = new Button();
 		button5.setGraphic(new ImageView(imageDecline));*/
@@ -92,11 +98,34 @@ public class Runner extends Application{
 		          @Override
 		          //FAEFDSAD
 		          public void handle(MouseEvent e) {
-		        	  StackPane root1 = new StackPane();
-		        	  Scene scene1 = new Scene(root1, 830,800);
-		      		//stage.setTitle = ("Map of Africa");
+		        	  StackPane root = new StackPane();
+		        	 // StackPane root1 = new StackPane();
+		        	  
+		        	 /* Text t = new Text();
+		      		t.setText("Welcome to Northern Africa");
+		      		t.setTranslateY(-50);
+		      		 Text t1 = new Text();
+			      		t1.setText("Northern Africa is made up of seven different countries: Western Sahara, Morocco, Algeria, Tunisha, Libya, Egypt, and Sudan");
+			      		t.setFont(Font.font("Verdana", 50));
+			    		t.setTextAlignment(TextAlignment.CENTER);*/
+		        	  Button button = new Button();
+		        	  button.setText("Hello");
+		        	  button.addEventHandler(MouseEvent.MOUSE_CLICKED,
+		      		        new EventHandler<MouseEvent>() {
+		      		          @Override
+		      		          //FAEFDSAD
+		      		          public void handle(MouseEvent e) {
+		      		        	stage.setScene(scene);
+		      		          }
+		      		        });
+			      		root.getChildren().addAll(button);
+			    		
+		        	  Scene scene1 = new Scene(root, 3000,1000);
+		      		
 		      		stage.setScene(scene1);
-		      		stage.show();
+		      		//stage.show();
+		  
+		      		
 		        	  
 		        	  //gdsgv
 		          }
@@ -157,22 +186,41 @@ public class Runner extends Application{
 		        	  //gdsgv
 		          }
 		        });
-		root.getChildren().addAll(imageView,button1.getButton(),button2.getButton(),button3.getButton(),button4.getButton(),button5.getButton());
 		
-		Scene scene = new Scene(root, 830,800);
-		//stage.setTitle = ("Map of Africa");
+		Image profile = new Image("images/profile.png");
+		ImageView pImageView = new ImageView(profile);
+		pImageView.setTranslateX(-800);
+		pImageView.setTranslateY(-350);
+	
+		Image icon = new Image("images/wahoorat.png");
+		ImageView iconView = new ImageView(icon);
+		iconView.setTranslateX(-800);
+		iconView.setTranslateY(350);
 		
+		Text t = new Text();
+		t.setText("The Majestical World of Africa");
+		t.setFont(Font.font("Verdana", 50));
+		t.setTextAlignment(TextAlignment.CENTER);
+		t.setFill(Color.BLACK);
+		t.setTranslateY(-400.0f);
 		
-		root.addEventHandler(MouseEvent.MOUSE_PRESSED,
-			       new EventHandler<MouseEvent>() {
-			          @Override
-			          public void handle(MouseEvent e) {
-			        	  int x=(int) e.getX();
-						   int y=(int) e.getY();
-						
-						  System.out.println(x+","+y);
-			          }
-			        });
+		imageView.setPreserveRatio(true);
+		
+		StackPane root = new StackPane();
+		StackPane root3 = new StackPane();
+		StackPane root1 = new StackPane();
+		StackPane root2 = new StackPane();
+
+		root3.getChildren().addAll(button1.getButton(),button2.getButton(),button3.getButton(),button4.getButton(),button5.getButton());
+		root1.getChildren().add(pImageView);
+		root2.getChildren().add(iconView);
+		root.getChildren().addAll(t,root1,root2,root3);
+		
+
+		//root.getChildren().add(t);
+		
+		 scene = new Scene(root, 3000,1000, Color.CADETBLUE);
+
 		
 		stage.setScene(scene);
 		stage.show();
@@ -180,32 +228,6 @@ public class Runner extends Application{
     }
 	
     public static void main(String[] args) {
-    	File data1 = new File("africa.csv");
-    	File data2 = new File("users.csv");
-    	File data3 = new File("chatlogs.csv");
-		CSVWorldUtilities africaData = new CSVWorldUtilities();
-		africaData.CSVUtilities(data1);
-		
-		CSVUserUtilities userData = new CSVUserUtilities();
-		userData.CSVUtilities(data2);
-		//userData.printData();
-		userData.username = "heck";
-		userData.password = "heck3";
-		//userData.writeCSV(data2);
-		
-		//CSVChatUtilities chatLogs = new CSVChatUtilities();
-		//chatLogs.CSVUtilities(data3);
-		//chatLogs.writeCSV(data3, "APPLES");
-		
-		Region northRegion = new Region("North");
-		northRegion.addCountries(africaData);
-		northRegion.printNamesOfCountries();
-		
-		//x.printData();
-		System.out.println(africaData.getDataString(3));
-		System.out.println(africaData.searchRegion("North"));
-		System.out.println(africaData.numColumns);
-		
         Application.launch(args);
     }
 }

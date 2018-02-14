@@ -17,7 +17,7 @@ public class Talent extends Application {
 
   @Override
   public void start(Stage primaryStage) {
-	  String path = "C:\\Users\\BT_1N3_03\\git\\Java-Application\\All Around the World of Africa\\src\\name.mp3";
+	String path = "C:\\Users\\BT_1N3_06\\git\\Java-Application\\All Around the World of Africa\\src\\name.mp3";
 	  
     //final URL resource = getClass().getResource("name.mp3");
     final Media media = new Media(new File(path).toURI().toString());
