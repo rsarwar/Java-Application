@@ -11,7 +11,7 @@ public class Country
 	private String countryName = "";
 	private String countryInfo = "";
 	
-	public Country(String region, String countryName, String countryInfo )
+	public Country(String region, String countryName)
 	{
 		this.region = region;
 		this.countryName = countryName;
@@ -35,6 +35,11 @@ public class Country
 	public String getCountryInfo()
 	{
 		return this.countryInfo;
+	}
+	
+	public void updateInfo(String newInfo)
+	{
+		this.countryInfo = newInfo;
 	}
 	
 

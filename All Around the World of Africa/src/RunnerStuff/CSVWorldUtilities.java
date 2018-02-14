@@ -52,6 +52,7 @@ public class CSVWorldUtilities implements CSVUtilities
 		{
 			System.out.println("ERROR: File not found!");
 		}
+			System.out.println(numColumns);
 
 	}
 	

@@ -1,4 +1,5 @@
 package RunnerStuff;
+import RunnerStuff.CSVWorldUtilities;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,22 +27,38 @@ public class Region
 		return this.regionName;
 	}
 
+	//Adds countries to the 
 	
-	public void addCountries(CSVWorldUtilities countryData)
+	public void addCountries(CSVWorldUtilities africaData)
 	{
-		//Junk is a placeholder for the names of the countries returned from searchRegion.
+		int countryColumn = 0;
+		int infoColumn = 6;
 		
-		List<String> junk = countryData.searchRegion(this.regionName);
+		List<String> searchedCountries = africaData.searchRegion(this.regionName);
+		List<String> countryList  = africaData.getDataString(countryColumn);
+		List<String> infoList = africaData.getDataString(infoColumn);
 		
-		for(int i = 0; i < junk.size(); i++)
+		for(int i = 0; i < searchedCountries.size(); i++)
 		{
-			Country x = new Country(this.regionName, junk.get(i));
+			Country x = new Country(this.regionName, searchedCountries.get(i));
+			
 			regionsCountries.add(x);
 		}
 		
+		for(int j = 0; j < countryList.size()-2; j++)
+		{
+			for(int k = 0; k < regionsCountries.size(); k++)
+			{
+				if(countryList.get(j).equals(regionsCountries.get(k).getCountryName()))
+				{
+						regionsCountries.get(k).updateInfo(infoList.get(j));
+				}
+			}
+		}
 		
 	}
 	
+	// A testing function used to print the names of all the countries from the Region's country array.
 	public void printNamesOfCountries()
 	{
 		for(int i = 0; i < this.getRegionsCountries().size(); i++)
@@ -51,4 +68,16 @@ public class Region
 		System.out.println();
 		
 	}
-}
+	
+	public void printInfoOfCountries()
+	{
+		for(int i = 0; i < this.getRegionsCountries().size(); i++)
+		{	
+			System.out.print(this.getRegionsCountries().get(i).getCountryInfo() + "  ");
+		}
+		System.out.println();
+		
+	}
+	
+	
+	}
