@@ -1,4 +1,5 @@
 package RunnerStuff;
+
 import java.io.FileNotFoundException;
 
 import com.sun.prism.Image;
@@ -48,20 +49,16 @@ public class Select {
 			        	  //button.setStyle("-fx-background-color: transparent;");
 			          }
 			        }); 
-			/*this.button.addEventHandler(MouseEvent.MOUSE_ENTERED,
-				       new EventHandler<MouseEvent>() {
-				          @Override
-				          public void handle(MouseEvent e) {
-				        	  button.setStyle("-fx-background-color: yellow;");
-				          }//-fx-background-color: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.2))
-				        });
-				this.button.addEventHandler(MouseEvent.MOUSE_EXITED,
-				        new EventHandler<MouseEvent>() {
-				          @Override
-				          public void handle(MouseEvent e) {
-				        	  button.setStyle("-fx-background-color: transparent;");
-				          }
-				        }); */
+			/*this.button.addEventHandler(MouseEvent.MOUSE_CLICKED,
+			        new EventHandler<MouseEvent>() {
+			          @Override
+			         
+			          public void handle(MouseEvent e) {
+			        	   
+			      		  button.getScene().setRoot(loadScreenTwo());  
+			          }
+			        });*/
+			
 	}
 
 	public void newRegion(Stage stage)throws FileNotFoundException
