@@ -18,7 +18,7 @@ public class CSVRegionUtilities implements CSVUtilities
 	int numColumns = 2;
 	int numRows = 0;
 	
-	
+	//Loads data from the CSV file and puts it in an ArrayList<String> called CSVUserData.
 	public void CSVUtilities(File csv)
 	{
 			FileReader reader = null;
@@ -57,6 +57,7 @@ public class CSVRegionUtilities implements CSVUtilities
 
 	} 
 	
+	//Testing method used to print all the data from the CSVUserData.
 	public void printData()
 	{
 		int y = this.numColumns;
@@ -78,11 +79,12 @@ public class CSVRegionUtilities implements CSVUtilities
 		}
 	}
 	
+	//Returns an 
 	public List<String> getDataString(int column)
 	{
 		ArrayList<String> x = new ArrayList<String>();
 		int i = column+numColumns;
-		while(i < numColumns*numRows-1)
+		while(i < numColumns*numRows)
 		{	
 			String y = CSVUserData.get(i);
 			x.add(y);
@@ -130,9 +132,12 @@ public class CSVRegionUtilities implements CSVUtilities
 		
 		for(int j = 0; j < a.size(); j++)
 		{
+			System.out.println(a.get(j));
+			System.out.println(b.get(j));
 			if(a.get(j).equals(region))
 			{
-				return b.get(j);
+				
+				return b.get(j);			
 			}
 		}	
 		return "That is not a region.";
