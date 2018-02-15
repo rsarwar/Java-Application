@@ -108,7 +108,7 @@ public class CSVRegionUtilities implements CSVUtilities
 	}
 	
 	@Override
-	public List<Double> getDataDouble(int column)
+	public List<Double> getDataDouble(int column) 
 	{
 		ArrayList<Double> x = new ArrayList<Double>();
 		int i = column+numColumns;
