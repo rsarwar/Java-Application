@@ -118,6 +118,26 @@ public class CSVRegionUtilities implements CSVUtilities
 		}
 		return x;
 	}
+	
+	public String getInfoForRegion(String region)
+	{
+		int regionColumn = 0;
+		int infoColumn = 1;
+		
+		List<String> a = this.getDataString(regionColumn);
+		List<String> b = this.getDataString(infoColumn);
+		//ArrayList<String> countries = new ArrayList<String>();
+		
+		for(int j = 0; j < a.size(); j++)
+		{
+			if(a.get(j).equals(region))
+			{
+				return b.get(j);
+			}
+		}	
+		return "That is not a region.";
+		 
+	}
 
 	
 }
