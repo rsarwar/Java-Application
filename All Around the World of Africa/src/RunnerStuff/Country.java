@@ -17,25 +17,35 @@ public class Country
 		this.countryName = countryName;
 	}
 	
+	//Returns name of the country.
+	
 	public String getCountryName()
 	{
 		return this.countryName;
 	}
+	
+	//Returns the region the country is in.
 	
 	public String getRegion()
 	{
 		return this.region;
 	}
 	
+	//Unused method.
+	
 	public ArrayList<Integer> getCoordinates()
 	{
 		return this.coordinates;
 	}
 	
+	//Returns info of the country.
+	
 	public String getCountryInfo()
 	{
 		return this.countryInfo;
 	}
+	
+	//Takes in a parameter of a String newInfo to update the coutnryInfo variable.
 	
 	public void updateInfo(String newInfo)
 	{

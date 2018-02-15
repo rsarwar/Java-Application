@@ -17,18 +17,21 @@ public class Region
 		this.regionName = regionName;
 	}
 	
+	//Returns the list of countries in the region.
 	public ArrayList<Country> getRegionsCountries()
 	{
 		return this.regionsCountries;
 	}
 	
+	
+	//Returns name of the region.	
 	public String getRegionName()
 	{
 		return this.regionName;
 	}
 
-	//Adds countries to the 
 	
+	//Adds countries to the region class in the regionsCountries ArrayList.
 	public void addCountries(CSVWorldUtilities africaData)
 	{
 		int countryColumn = 0;
@@ -61,6 +64,7 @@ public class Region
 		
 	}
 	
+	
 	// A testing function used to print the names of all the countries from the Region's country array.
 	public void printNamesOfCountries()
 	{
@@ -72,6 +76,7 @@ public class Region
 		
 	}
 	
+	//P
 	public void printInfoOfCountries()
 	{
 		for(int i = 0; i < this.getRegionsCountries().size(); i++)
