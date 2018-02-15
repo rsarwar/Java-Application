@@ -15,16 +15,16 @@ import javafx.stage.Stage;
 public class Select {
 	
 	private Button button;
-	private int x,y,length,width;
+	private int x,y;//length,width;
 	private String imageOne, imageTwo;
-	public Select(Button button,int x, int y, int length, int width, String imageOne, String imageTwo)
+	public Select(Button button,int x, int y/*int length, int width, */,String imageOne, String imageTwo)
 	{
 		//this.Switchimage = image;
 		this.button = button;
 		this.x = x;
 		this.y = y;
-		this.length = length;
-		this.width = width;
+		//this.length = length;
+		//this.width = width;
 		this.imageOne = imageOne;
 		this.imageTwo = imageTwo;
 		this.button.setStyle("-fx-background-color: transparent;");
