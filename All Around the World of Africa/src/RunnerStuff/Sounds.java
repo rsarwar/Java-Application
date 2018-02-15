@@ -9,10 +9,10 @@ import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 
-public class Talent extends Application {
+public class Sounds /*extends Application*/ {
 
 	
-  public static void main(String[] args) {
+  /*public static void main(String[] args) {
     launch(args);
   }
 
@@ -31,6 +31,21 @@ public class Talent extends Application {
     primaryStage.setWidth(200);
     primaryStage.setHeight(200);
     primaryStage.show();
-  }
+  }*/
+	
+	private String path;
+	
+	public Sounds(String url)
+	{
+		this.path = url;
+	}
+	public void play()
+	{
+		 final Media media = new Media(new File(this.path).toURI().toString());
+		    
+		    final MediaPlayer mediaPlayer = new MediaPlayer(media);
+		    
+		    mediaPlayer.play();
+	}
   
 }

@@ -21,6 +21,9 @@ import javafx.scene.text.TextFlow;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+
+import javax.print.DocFlavor.URL;
+
 import javafx.event.EventHandler;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -191,6 +194,7 @@ stage.setTitle("All Around the World of Africa");
 	        	    final MediaPlayer mediaPlayer = new MediaPlayer(media);
 	        	    
 	        	    mediaPlayer.play();
+	        	 
 	          }
 	        });
 		
