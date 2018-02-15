@@ -8,14 +8,16 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
+
 /*
  * Miriam Monroe and Ramisha Sarwar
  */
-public class CSVWorldUtilities implements CSVUtilities
+public class CSVRegionUtilities implements CSVUtilities
 {
-	ArrayList<String> CSVWorldData = new ArrayList<String>();
-	int numColumns = 7;
+	ArrayList<String> CSVUserData = new ArrayList<String>();
+	int numColumns = 2;
 	int numRows = 0;
+	
 	
 	public void CSVUtilities(File csv)
 	{
@@ -35,7 +37,7 @@ public class CSVWorldUtilities implements CSVUtilities
 							//numColumns = attributes.length;
 							for(int x = 0; x < numColumns; x++ )
 							{
-								CSVWorldData.add(attributes[x]);
+								CSVUserData.add(attributes[x]);
 							}
 							numRows++;
 							line = filein.readLine(); 
@@ -52,10 +54,8 @@ public class CSVWorldUtilities implements CSVUtilities
 		{
 			System.out.println("ERROR: File not found!");
 		}
-			System.out.println(CSVWorldData);
 
-	}
-	
+	} 
 	
 	public void printData()
 	{
@@ -67,7 +67,10 @@ public class CSVWorldUtilities implements CSVUtilities
 		{
 			for(int i = 0; i < y; i++)
 			{	
-				System.out.print(this.CSVWorldData.get(a) + "  ");
+				if(a < CSVUserData.size())
+				{
+					System.out.print(this.CSVUserData.get(a) + "  ");					
+				}
 				a++;
 			}
 			System.out.println();
@@ -81,7 +84,7 @@ public class CSVWorldUtilities implements CSVUtilities
 		int i = column+numColumns;
 		while(i < numColumns*numRows-1)
 		{	
-			String y = CSVWorldData.get(i);
+			String y = CSVUserData.get(i);
 			x.add(y);
 			i = i+numColumns;
 		}
@@ -95,7 +98,7 @@ public class CSVWorldUtilities implements CSVUtilities
 		int i = column+numColumns;
 		while(i < numColumns*numRows)
 		{	
-			int y = Integer.parseInt(CSVWorldData.get(i));
+			int y = Integer.parseInt(CSVUserData.get(i));
 			x.add(y);
 			i = i+numColumns;
 		}
@@ -109,31 +112,30 @@ public class CSVWorldUtilities implements CSVUtilities
 		int i = column+numColumns;
 		while(i < numColumns*numRows)
 		{	
-			double y = Double.parseDouble(CSVWorldData.get(i));
+			double y = Double.parseDouble(CSVUserData.get(i));
 			x.add(y);
 			i = i+numColumns;
 		}
 		return x;
 	}
-	 
-	public List<String> searchRegion(String region)
+	
+	public String getInfoForRegion(String region)
 	{
-		int countryColumn = 0;
-		int regionColumn = 1;
+		int regionColumn = 0;
+		int infoColumn = 1;
 		
-		List<String> a = this.getDataString(countryColumn);
-		List<String> b = this.getDataString(regionColumn);
-		ArrayList<String> countries = new ArrayList<String>();
+		List<String> a = this.getDataString(regionColumn);
+		List<String> b = this.getDataString(infoColumn);
+		//ArrayList<String> countries = new ArrayList<String>();
 		
-		for(int j = 0; j < a.size()-2; j++)
+		for(int j = 0; j < a.size(); j++)
 		{
-			if(b.get(j).equals(region))
+			if(a.get(j).equals(region))
 			{
-				countries.add(a.get(j));		
+				return b.get(j);
 			}
 		}	
-		//System.out.println(b.size());
-		return countries;
+		return "That is not a region.";
 		 
 	}
 

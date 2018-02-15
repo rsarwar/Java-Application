@@ -228,6 +228,36 @@ private Scene scene;
     }
 	
     public static void main(String[] args) {
+//Data-Team
+    	File data1 = new File("africa.csv");
+    	File data2 = new File("users.csv");
+    	File data3 = new File("chatlogs.csv");
+		CSVWorldUtilities africaData = new CSVWorldUtilities();
+		africaData.CSVUtilities(data1);
+		
+		CSVUserUtilities userData = new CSVUserUtilities();
+		userData.CSVUtilities(data2);
+		//userData.printData();
+		userData.username = "heck";
+		userData.password = "heck3";
+		//userData.writeCSV(data2);
+		
+		//CSVChatUtilities chatLogs = new CSVChatUtilities();
+		//chatLogs.CSVUtilities(data3);
+		//chatLogs.writeCSV(data3, "APPLES");
+		
+		Region northRegion = new Region("North");
+		northRegion.addCountries(africaData);
+		northRegion.printNamesOfCountries();
+		northRegion.printInfoOfCountries();
+		
+		//x.printData();
+		System.out.println(africaData.getDataString(3));
+		System.out.println(africaData.searchRegion("North"));
+		System.out.println(africaData.numColumns);
+		
+=======
+// master
         Application.launch(args);
     }
 }
