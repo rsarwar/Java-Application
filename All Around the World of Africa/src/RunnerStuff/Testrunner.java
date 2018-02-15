@@ -13,6 +13,7 @@ package RunnerStuff;
  import javafx.scene.control.Button;
  import javafx.scene.layout.HBox;
 import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextAlignment;
 import javafx.scene.text.TextFlow;
@@ -68,12 +69,7 @@ stage.setTitle("All Around the World of Africa");
 		
 		//stage.getStylesheets().add("http://fonts.googleapis.com/css?family=Gafata");
 		
-		/*Image image = new Image(new FileInputStream("africa-regions-map.jpg"));
-		ImageView imageView = new ImageView(image);
-		imageView.setTranslateX(-600);
-		imageView.setTranslateY(50);
-		imageView.setFitHeight(580);
-		imageView.setFitWidth(550);*/
+		
 		Image image = new Image("images/africa-regions-map.jpg");
 		ImageView imageView = new ImageView(image);
 		imageView.setTranslateX(-600);
@@ -82,18 +78,13 @@ stage.setTitle("All Around the World of Africa");
 		imageView.setFitWidth(550);
         imageView.setPreserveRatio(true);
 		
-		//StackPane root = new StackPane();
-		/*Image imageDecline = new Image(getClass().getResourceAsStream("not.png"));
-		Button button5 = new Button();
-		button5.setGraphic(new ImageView(imageDecline));*/
-		//Button btn3 = new Button();
+	
 		Button btn1 = new Button();
 		Button btn2 = new Button();
 		Button btn3 = new Button();
 		Button btn4 = new Button();
 		Button btn5 = new Button();
-		//Select button3 = new Select(btn3,-40,-100,100,100);
-		//Select button2 = new Select(btn2,-140,-80,100,200);
+	
 		Image regionOne = new Image("images/NORTH.png");
 		btn1.setGraphic(new ImageView(regionOne));
 		Image regionTwo = new Image("images/WEST.png");
@@ -114,44 +105,33 @@ stage.setTitle("All Around the World of Africa");
 		button1.getButton().addEventHandler(MouseEvent.MOUSE_CLICKED,
 		        new EventHandler<MouseEvent>() {
 		          @Override
-		          //FAEFDSAD
+		         
 		          public void handle(MouseEvent e) {
-		        	  
-		        	 
-		      		          
+		        	   
 		      		  button1.getButton().getScene().setRoot(loadScreenTwo());  
-		      		          
-		      		        
-			      		
-		      		//stage.show();
-		  
-		      		
-		        	  
-		        	  //gdsgv
 		          }
 		        });
 		button2.getButton().addEventHandler(MouseEvent.MOUSE_CLICKED,
 		        new EventHandler<MouseEvent>() {
 		          @Override
-		          //FAEFDSAD
+		         
 		          public void handle(MouseEvent e) {
 		        	  StackPane root1 = new StackPane();
 		        	  Scene scene1 = new Scene(root1, 830,800);
-		      		//stage.setTitle = ("Map of Africa");
+		      	
 		      		stage.setScene(scene1);
 		      		stage.show();
-		        	  
-		        	  //gdsgv
+		        	
 		          }
 		        });
 		button3.getButton().addEventHandler(MouseEvent.MOUSE_CLICKED,
 		        new EventHandler<MouseEvent>() {
 		          @Override
-		          //FAEFDSAD
+		        
 		          public void handle(MouseEvent e) {
 		        	  StackPane root1 = new StackPane();
 		        	  Scene scene1 = new Scene(root1, 830,800);
-		      		//stage.setTitle = ("Map of Africa");
+		      
 		      		stage.setScene(scene1);
 		      		stage.show();
 		        	  
@@ -161,49 +141,47 @@ stage.setTitle("All Around the World of Africa");
 		button4.getButton().addEventHandler(MouseEvent.MOUSE_CLICKED,
 		        new EventHandler<MouseEvent>() {
 		          @Override
-		          //FAEFDSAD
+		    
 		          public void handle(MouseEvent e) {
 		        	  StackPane root1 = new StackPane();
 		        	  Scene scene1 = new Scene(root1, 830,800);
-		      		//stage.setTitle = ("Map of Africa");
+		      	
 		      		stage.setScene(scene1);
 		      		stage.show();
-		        	  
-		        	  //gdsgv
+		        	
 		          }
 		        });
 		button5.getButton().addEventHandler(MouseEvent.MOUSE_CLICKED,
 		        new EventHandler<MouseEvent>() {
 		          @Override
-		          //FAEFDSAD
+		   
 		          public void handle(MouseEvent e) {
 		        	  StackPane root1 = new StackPane();
 		        	  Scene scene1 = new Scene(root1, 830,800);
-		      		//stage.setTitle = ("Map of Africa");
+		 
 		      		stage.setScene(scene1);
 		      		stage.show();
-		        	  
-		        	  //gdsgv
+		        	
 		          }
 		        });
 		
 		Image profile = new Image("images/profile.png");
 		ImageView pImageView = new ImageView(profile);
-		pImageView.setTranslateX(-800);
-		pImageView.setTranslateY(-350);
+		pImageView.setTranslateX(-500);
+		pImageView.setTranslateY(-250);
 	
 		Button wahoo = new Button();
 		
 		Image icon = new Image("images/wahoorat.png");
-		//ImageView iconView = new ImageView(icon);
+		
 		
 		wahoo.setGraphic(new ImageView(icon));
-		wahoo.setTranslateX(-800);
-		wahoo.setTranslateY(350);
+		wahoo.setTranslateX(-500);
+		wahoo.setTranslateY(200);
 		wahoo.addEventHandler(MouseEvent.MOUSE_CLICKED,
 		        new EventHandler<MouseEvent>() {
 	          @Override
-	          //FAEFDSAD
+	      
 	          public void handle(MouseEvent e) {
 	        	  String path = "C:\\Users\\BT_1N3_06\\git\\Java-Application\\All Around the World of Africa\\src\\Alice.mp3";
 	        	  
@@ -218,16 +196,31 @@ stage.setTitle("All Around the World of Africa");
 		
 		Text t = new Text();
 		t.setText("The Majestical World of Africa");
-		t.setFont(Font.font("Verdana", 50));
+		t.setFont(Font.font("Verdana", 40));
 		t.setTextAlignment(TextAlignment.CENTER);
 		t.setFill(Color.BLACK);
-		t.setTranslateY(-400.0f);
+		t.setTranslateY(-350);
+		t.setTranslateX(0);
+		Text u = new Text();
+		u.setText("Choose your region");
+		u.setFont(Font.font("Verdana", FontWeight.BOLD, 40));
+		u.setTextAlignment(TextAlignment.CENTER);
+		u.setFill(Color.BLACK);
+		u.setTranslateY(-200);
+		u.setTranslateX(460);
+		Text v = new Text();
+		v.setText("Click Me!!!");
+		v.setFont(Font.font("Verdana", FontWeight.BOLD, 30));
+		v.setTextAlignment(TextAlignment.CENTER);
+		v.setFill(Color.BLACK);
+		v.setTranslateY(100);
+		v.setTranslateX(-500);
 		StackPane root = new StackPane();
 		StackPane root3 = new StackPane();
 		StackPane root1 = new StackPane();
 		StackPane root2 = new StackPane();
 
-		root3.getChildren().addAll(root1,root2,button1.getButton(),button2.getButton(),button3.getButton(),button4.getButton(),button5.getButton());
+		root3.getChildren().addAll(t,u,v,root1,root2,button1.getButton(),button2.getButton(),button3.getButton(),button4.getButton(),button5.getButton());
 		root1.getChildren().add(pImageView);
 		root2.getChildren().add(wahoo);
 		
@@ -235,7 +228,8 @@ stage.setTitle("All Around the World of Africa");
         
         
         vBox.getChildren().addAll(root3);
-        vBox.setStyle("-fx-background-color: #8fbc8f;");
+        vBox.setStyle(" -fx-background-color: radial-gradient(center 50% 50% , radius 200px , #ffebcd, #008080)");
+      
         return vBox;
     }
 

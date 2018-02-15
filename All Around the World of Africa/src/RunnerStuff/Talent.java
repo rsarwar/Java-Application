@@ -11,6 +11,7 @@ import javafx.stage.Stage;
 
 public class Talent extends Application {
 
+	
   public static void main(String[] args) {
     launch(args);
   }
@@ -31,4 +32,5 @@ public class Talent extends Application {
     primaryStage.setHeight(200);
     primaryStage.show();
   }
+  
 }
