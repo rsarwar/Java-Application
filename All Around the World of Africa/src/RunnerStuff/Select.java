@@ -12,6 +12,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
+//Syeda Islam
 
 public class Select {
 	
@@ -60,7 +61,8 @@ public class Select {
 			        });*/
 			
 	}
-
+	
+	//the regions act as buttons, so when you click on one it will open to a new scene
 	public void newRegion(Stage stage)throws FileNotFoundException
 	{
 		this.button.addEventHandler(MouseEvent.MOUSE_CLICKED,

@@ -43,7 +43,7 @@ import javafx.application.Application;
 import java.io.File;
 
 import javafx.application.Application;
-
+//this class was just used for testing purposes of the csv data
 public class TESTING{
 
 	public static void main(String[] args){
